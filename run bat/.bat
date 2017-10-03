@@ -1,0 +1,1 @@
+C:\Program Files (x86)\Hidemaru\*Hidemaru.exe C:\Windows\System32\drivers\etc\hostsC:\Users\stroketip\Desktop\ショートカット\ahk\run bat\net alive.bat

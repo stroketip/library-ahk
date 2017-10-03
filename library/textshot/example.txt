@@ -1,0 +1,10 @@
+stickies
+
+定型文
+C:\Users\stroketip\Desktop\ショートカット\ahk\library\.txt
+
+ここに保存される
+
+タイトルを聞いてくる
+
+入力する

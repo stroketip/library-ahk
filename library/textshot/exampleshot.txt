@@ -1,0 +1,30 @@
+{
+	y =170
+	send,{blind}{ctrl up}
+	loop 10
+	{
+
+	pixelgetcolor color,404,%y%
+
+
+
+	stringmid data,color,3,1
+	stringmid data2,color,4,1
+
+	if data = E
+	{
+	mousemove,404,%y%
+	mouseclick, left
+	break
+	}
+	else if data2 = C
+	{
+	mousemove,404,%y%
+	mouseclick, left
+	}
+
+	y += 22
+	
+	}
+}
+

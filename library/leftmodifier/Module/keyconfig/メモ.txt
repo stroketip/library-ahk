@@ -1,0 +1,19 @@
+;基本的なスタイル。コレが関数化できればなー。
+;*a::
+;If(Spacedown == 1){
+;	msgbox スペース入力時の処理
+;	Modrun := 1
+;	keywait, a ;←連打防止用
+;	return
+;}Else If(henkandown == 1){
+;	msgbox 変換入力時の処理
+;	Modrun := 1
+;	keywait, a ;←連打防止用
+;	return
+;}Else{
+;	msgbox そのままブッパ
+;	sendInput,{Blind}{a}
+;	return
+;}
+
+;A_ThisHotkeyで変数入れてもループして使い物にならねぇようわぁん

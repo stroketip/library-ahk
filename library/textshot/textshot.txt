@@ -1,0 +1,14 @@
+:*:,,textshot::
+{
+
+	clipboard_backup = %ClipboardAll%
+	
+	FileRead, temp, C:\Users\stroketip\Desktop\ショートカット\ahk\library\textshot.txt
+
+	clipboard := temp
+	
+	clipwait,1
+	
+	send,^v
+	return
+}

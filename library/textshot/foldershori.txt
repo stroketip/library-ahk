@@ -1,0 +1,4 @@
+loop,C:\Users\stroketip\Downloads\torrent\*.torrent
+{
+	filedelete,%a_loopfilefullpath%
+}

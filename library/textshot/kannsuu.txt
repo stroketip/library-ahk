@@ -1,0 +1,19 @@
++^x::
+{
+	foldtemp = C:\Users\stroketip\Desktop\ショートカット\D-SendMail_117 (1)\D-SendMail.exe
+	dsendx(foldtemp)
+	return
+}
+
+dsendx(foldtemp)
+{
+
+		run,"%foldtemp%"
+		
+		
+		winactivate,D-SendMail
+		winwait,D-SendMail
+
+	return
+}
+

@@ -1,0 +1,4 @@
+{
+	msgbox,nouse
+	return
+}

@@ -1,0 +1,315 @@
+SetTitleMatchMode, 2
+
+#ifwinactive 
+:*:,kiku::
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,f5
+	send,{enter}
+	return
+}
+
+:*:,mamuw::
+:*:,smamuw::
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,k5
+	send,{enter}
+	return
+}
+
+:*:,mamuy::
+:*:,smamuy::
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,k30
+	send,{enter}
+	return
+}
+
+:*:,mamup::
+:*:,smamup::
+
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,k18
+	send,{enter}
+	return
+}
+:*:,sutokku::
+
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,k42
+	send,{enter}
+	return
+}
+:*:,soridako::
+
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,k55
+	send,{enter}
+	return
+}
+:*:,robe::
+
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,k67
+	send,{enter}
+	return
+}
+:*:,kasumi::
+
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,k79
+	send,{enter}
+	return
+}
+
+:*:,dorasena::
+
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,k91
+	send,{enter}
+	return
+}
+:*:,tisu::
+
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,k103
+	send,{enter}
+	return
+}
+:*:,onnsi::
+:*:,onsi::
+
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,k115
+	send,{enter}
+	return
+}
+
+:*:,reza-::
+
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,k127
+	send,{enter}
+	return
+}
+
+:*:,banda::
+
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,k139
+	send,{enter}
+	return
+}
+
+:*:,farepu::
+:*:,kotyou::
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,k151
+	send,{enter}
+	return
+}
+
+:*:,denfare::
+
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,k163
+	send,{enter}
+	return
+}
+
+:*:,suitopi-::
+
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,k175
+	send,{enter}
+	return
+}
+:*:,ska-ne::
+
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,f18
+	send,{enter}
+	return
+}
+:*:,pinnpon::
+
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,f30
+	send,{enter}
+	return
+}
+:*:,meria::
+:*:,arusutoro::
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,f42
+	send,{enter}
+	return
+}
+:*:,sinbi::
+:*:,sinpi::
+:*:,sinnbi::
+:*:,sinnpi::
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,f55
+	send,{enter}
+	return
+}
+:*:,ka-ne::
+
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,f67
+	send,{enter}
+	return
+}
+:*:,yuri::
+
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,f79
+	send,{enter}
+	return
+}
+:*:,gura::
+
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,f91
+	send,{enter}
+	return
+}
+
+:*:,teppou::
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,f127
+	send,{enter}
+	return
+}
+
+:*:,toruko::
+{
+	send,{esc}
+	sleep,50
+	send,^g
+	sleep,150
+	send,{vk1Dsc07B}
+	send,f139
+	send,{enter}
+	return
+}

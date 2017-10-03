@@ -1,0 +1,81 @@
+***青のいいところわるいところ
+-ステータスは攻撃力とHPが同じかHPがやや高め。
+-戦闘に有利な能力を持つアタッカーがほとんど居らず、ステータスに影響する補助カードもほぼ存在しないため、戦闘そのものには弱め。
+-&link_anchor(手札増加関連,page=戦術関連){ドロー、サーチ}、&link_anchor(バウンス関連,page=戦闘関連){バウンス}が得意。また、何かを「入れ替える」効果が多い。
+-&link_anchor(デッキ関連,page=戦術関連){相手のデッキを直接減らすカード}があり、相手のデッキ切れで勝つ手段もある。
+-[[煙]]以外の&link_anchor(魔力・魔力増加量関連,page=戦術関連){魔力増加手段}がない。
+-&link_anchor(先攻関連,page=ステータス関連){先攻持ち}はいない。
+-アドバンテージをひっくり返せるカードが豊富wで押されてる状況でも逆転しやすい。
+-概して相手の行動を利用するカードが多い。悪く言えば相手依存なのでやや腐りやすい。
+----
+**一覧
+|CENTER:レベル|CENTER:画像|CENTER:名前|CENTER:攻撃力|CENTER:HP|CENTER:速度|CENTER:能力|
+｜CENTER:0|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=115&file=53.png,width=43,height=59)|《[[青い煙]]》|CENTER:0|CENTER:0|CENTER:0||&color(blue){■使用効果:}自分の魔力を「自分の墓地にある青い煙の数+1」増やす　このカードを破壊する|
+|>|>|>|>|>|>|BGCOLOR(BLACK): |
+|CENTER:1|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=77&file=60.png,width=43,height=59)|《[[タツノオトシゴ]]》|CENTER:2|CENTER:3|CENTER:||
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=266&file=61.png,width=43,height=59)|《[[人魚運び屋]]》|~|CENTER:1|CENTER:2|CENTER:|&color(red){人魚族}&br()&color(blue){■使用効果:}カードを2枚引く　自分の手札から1枚選び、自分のデッキの上から2枚目に置く|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=217&file=58.png,width=43,height=59)|《[[タコ]]》|~|CENTER:1|CENTER:2|CENTER:|&color(blue){■使用効果:}自分のデッキの上4枚から1枚選び、手札に加える|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=68&file=65.png,width=43,height=59)|《[[シスター]]》|~|CENTER:1|CENTER:2|CENTER:|&color(blue){■使用効果:}自分の全てのサブを手札に戻す　「手札に戻したサブの数」カードを引く|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=227&file=62.png,width=43,height=59)|《[[カブトガニ]]》|~|CENTER:1|CENTER:2|CENTER:|&color(blue){■使用効果:}カードを1枚引く&br()アタッカー1体の勝利効果と敗北効果を入れ替える|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=90&file=54.png,width=43,height=59)|《[[イソギンチャク]]》|~|CENTER:2|CENTER:2|CENTER:COLOR(green):後攻|&color(blue){■使用効果:}自分のサブ1体を自分のアタッカーと入れ替える|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=221&file=64.png,width=43,height=59)|《[[探検家]]》|~|CENTER:1|CENTER:2|CENTER:|&color(blue){■使用効果:}青以外のカードが出るまでカードを引く　この過程で引いた青のカードを破壊する|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=218&file=63.png,width=43,height=59)|《[[漁師]]》|~|CENTER:2|CENTER:3|CENTER:COLOR(green):後攻|&color(blue){■使用効果:}レベル4以上のカードが出るまでカードを引く　この過程で引いたレベル3以下のカードを破壊する|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=172&file=59.png,width=43,height=59)|《[[プリンセス]]》|~|CENTER:1|CENTER:2|CENTER:|&color(blue){■使用効果:}カードを1枚引く&br()相手の使用したカードの使用効果を、消費魔力を0としてコピーして発動する（プリンセス以外）|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=294&file=56.png,width=43,height=59)|《[[サンタ]]》|~|CENTER:2|CENTER:3|CENTER:COLOR(green):後攻|&color(blue){■使用効果:}以下の2つから1つを選ぶ (A)カードを2枚引き、自分の手札から1枚選び、相手の待機所に出す (B)カードを1枚引き、自分の手札から1枚選び、相手の手札に加える|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=322&file=55.png,width=43,height=59)|《[[ヒトデ]]》|CENTER:~|CENTER:1|CENTER:2|CENTER:|&color(blue){■使用効果（消費魔力1）:}両者は全ての手札をデッキに戻し、デッキを切り直し、カードを5枚引く&br()&color(magenta){■待機効果:}自分の攻撃力5のアタッカーのHPが0になった場合、それと入れ替わる|
+|>|>|>|>|>|>|BGCOLOR(BLACK): |
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=79&file=68.png,width=43,height=59)|《[[人魚メイジ]]》|CENTER:2|CENTER:2|CENTER:2|CENTER:|&color(red){人魚族}&br()&color(blue){■使用効果:}相手がこのターンにカードを使用していた場合、自分のアタッカーのHPと攻撃力を相手のアタッカーと同じにする|
+|,&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=253&file=75.png,width=43,height=59)|《[[人魚予言者]]》|~|CENTER:2|CENTER:3|CENTER:|&color(red){人魚族}&br()■【戦場・待機所】:相手が「自分のデッキの一番下のカードと同じカード」を使用した場合、相手の全てのクリーチャーを手札に戻す&br()&color(blue){■使用効果:}デーモン以外の全種類のカードから1枚選び、自分のデッキの一番下に置く|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=165&file=66.png,width=43,height=59)|《[[海賊子分]]》|~|CENTER:3|CENTER:3|CENTER:|&color(orange){■勝利効果:}自分のサブが2体以下の場合、相手のサブ1体を自分の待機所に移す|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=161&file=71.png,width=43,height=59)|《[[女海賊]]》|~|CENTER:3|CENTER:3|CENTER:|&color(orange){■勝利効果:}相手のデッキの上から3枚を自分の手札に加える|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=48&file=72.png,width=43,height=59)|《[[海賊親分]]》|~|CENTER:2|CENTER:3|CENTER:|&color(blue){■使用効果:}勝利効果を持つアタッカー1体の勝利効果を発動させる|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=50&file=69.png,width=43,height=59)|《[[カニ]]》|~|CENTER:2|CENTER:3|CENTER:|&color(blue){■使用効果:}敗北効果を持つアタッカー1体の敗北効果を発動させる|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=147&file=70.png,width=43,height=59)|《[[ランプの精]]》|~|CENTER:2|CENTER:3|CENTER:|&color(blue){■使用効果:}カードを3枚引く|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=82&file=77.png,width=43,height=59)|《[[ウミガメ]]》|~|CENTER:3|CENTER:4|CENTER:COLOR(green):後攻|&color(blue){■使用効果:}レベル1以下のアタッカー1体を手札に戻す|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=106&file=67.png,width=43,height=59)|《[[雪女]]》|~|CENTER:2|CENTER:2|CENTER:|&color(blue){■使用効果:}相手がこのターンに「名前に火か炎が含まれるカード」を使用していなかった場合、このターンの戦闘は行われない|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=207&file=78.png,width=43,height=59)|《[[電気イカ]]》|~|CENTER:2|CENTER:3|CENTER:|&color(blue){■使用効果（消費魔力13）:}相手のデッキの上から10枚を破壊する|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=127&file=74.png,width=43,height=59)|《[[踊り子]]》|~|CENTER:2|CENTER:2|CENTER:|■【戦場】自分の使用したカードはこのクリーチャーと入れ替わる|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=269&file=73.png,width=43,height=59)|《[[ホムンクルス]]》|~|CENTER:2|CENTER:3|CENTER:|&color(gold){無効}&br()■このクリーチャーは使用効果の影響を受けない|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=285&file=57.png,width=43,height=59)|《[[海神]]》|~|CENTER:2|CENTER:3|CENTER:|&color(blue){■使用効果:}自分のデッキの一番上のカードを破壊する　破壊したカードの使用効果をコピーして発動する&br()&color(magenta){■待機効果:}自分のデッキの一番上のカードを見ることができる|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=181&file=76.png,width=43,height=59)|《[[蒐集王]]》|~|CENTER:2|CENTER:2|CENTER:|&color(blue){■使用効果:}自分の手札が全て青の場合、全種類のカードから1枚選び手札に加える&br()◇コンプリート記念カード|
+|>|>|>|>|>|>|BGCOLOR(BLACK): |
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=107&file=86.png,width=43,height=59)|《[[青鬼]]》|CENTER:3|CENTER:5|CENTER:5|CENTER:||
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=80&file=79.png,width=43,height=59)|《[[人魚マダム]]》|~|CENTER:3|CENTER:3|CENTER:|&color(red){人魚族}&br()&color(blue){■使用効果（消費魔力1）:}相手のサブ1体を相手のアタッカーと入れ替える|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=126&file=80.png,width=43,height=59)|《[[人魚兵]]》|~|CENTER:3|CENTER:4|CENTER:|&color(red){人魚族}&br()&color(blue){■使用効果:}自分のアタッカーが人魚の場合、このカードとそれを入れ替え、それの使用効果を発動させる（この効果以外）|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=109&file=83.png,width=43,height=59)|《[[河童]]》|~|CENTER:3|CENTER:3|CENTER:|&color(blue){■使用効果:}イニシアチブを入れ替える|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=183&file=81.png,width=43,height=59)|《[[サメ]]》|~|CENTER:3|CENTER:4|CENTER:|&color(blue){■使用効果:}両者の使用したカードを入れ替える|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=44&file=88.png,width=43,height=59)|《[[深海魚]]》|~|CENTER:4|CENTER:5|CENTER:COLOR(green):後攻|&color(blue){■使用効果（消費魔力1）:}両者のデッキを入れ替える|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=44&file=85.png,width=43,height=59)|《[[巨大アンコウ]]》|~|CENTER:4|CENTER:5|CENTER:COLOR(green):後攻|&color(blue){■使用効果（消費魔力1）:}相手の手札から1枚選び、自分の手札に加える|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=89&file=84.png,width=43,height=59)|《[[ソーサラー]]》|~|CENTER:3|CENTER:3|CENTER:|&color(blue){■使用効果（消費魔力1）:}レベル5以上のアタッカーを手札に戻す|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=214&file=91.png,width=43,height=59)|《[[水使い]]》|CENTER:~|CENTER:3|CENTER:3|CENTER:|&color(blue){■使用効果（消費魔力2）:}以下の2つから1つを選ぶ　Xは「自分の手札の青カードの数-2」に等しい　(A)自分はカードをX枚引く　(B)相手はカードをX枚引く|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=66&file=87.png,width=43,height=59)|《[[オウムガイ]]》|~|CENTER:3|CENTER:3|CENTER:|&color(orange){■勝利効果:}相手のアタッカーのHPが0の場合、相手のアタッカーを破壊する　相手のアタッカーがいない場合、相手の手札から1枚選び、相手の戦場に出す|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=219&file=82.png,width=43,height=59)|《[[ナーガ]]》|~|CENTER:3|CENTER:3|CENTER:|&color(red){獣人族}&br()&color(skyblue){■敗北効果:}全てのクリーチャーから1体選び、このクリーチャーと入れ替える　この能力を失う|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=185&file=90.png,width=43,height=59)|《[[スキュラ]]》|~|CENTER:3|CENTER:4|CENTER:|&color(red){獣人族}&br()&color(blue){■使用効果:}手札の少ない方のプレイヤーは、次のターンの開始時に、カードを引けず、魔力が増えない|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=225&file=89.png,width=43,height=59)|《[[水先案内人]]》|~|CENTER:2|CENTER:3|CENTER:|&color(skyblue){■敗北効果:}このクリーチャーを破壊する&br()自分のデッキから1枚選び、戦場に出し、デッキを切り直す|
+|>|>|>|>|>|>|BGCOLOR(BLACK): |
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=84&file=97.png,width=43,height=59)|《[[首長竜]]》|CENTER:4|CENTER:4|CENTER:4|CENTER:|&color(blue){■使用効果:}レベルが「自分の手札の色の数」以下のアタッカー1体を手札に戻す（デーモンは黒と見なす）|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=119&file=95.png,width=43,height=59)|《[[クラーケン]]》|~|CENTER:5|CENTER:6|CENTER:COLOR(green):後攻|&color(blue){■使用効果:}両者のアタッカーの特殊能力を入れ替える|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=295&file=94.png,width=43,height=59)|《[[催眠術師]]》|~|CENTER:3|CENTER:4|CENTER:|&color(blue){■使用効果:}全種類のカードから1枚選ぶ　次のターン、相手は可能ならば選ばれたカードを使用する|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=311&file=93.png,width=43,height=59)|《[[ギャンブラー]]》|CENTER:~|CENTER:3|CENTER:4|CENTER:|&color(blue){■使用効果:}自分の手札の左から3枚を裏向きにして相手に選ばせる（相手から色は分かる）&br()それが種族を持つ場合、自分の戦場に出す&br()そうでない場合、相手の戦場に出す|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=324&file=92.png,width=43,height=59)|《[[ハイランダー]]》|CENTER:~|CENTER:4|CENTER:4|CENTER:|■:対戦開始時に自分のデッキのカードが全て異なる場合、通常より1枚多い手札で対戦を始める（このカードが手札にある場合は2枚）&br()デッキ構築時に全ての手札が異なる場合、このカードは2色制限に含めない|
+|>|>|>|>|>|>|BGCOLOR(BLACK): |
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=186&file=100.png,width=43,height=59)|《[[スカイドラゴン]]》|CENTER:5|CENTER:6|CENTER:6|CENTER:|&color(red){ドラゴン族}&br()&color(orange){■勝利効果:}両者のアタッカーを入れ替える&br()&color(red){■手札効果（消費魔力1）:}効果によって手札に加えられた場合、待機所に出る|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=215&file=99.png,width=43,height=59)|《[[ヤマタノオロチ]]》|~|CENTER:5|CENTER:6|CENTER:|&color(blue){■使用効果:}全てのサブから1体選び、自分の手札に移す|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=166&file=101.png,width=43,height=59)|《[[クジラ]]》|CENTER:~|CENTER:4|CENTER:5|CENTER:|&color(blue){■使用効果（消費魔力1）:}相手の使用したカードを手札に戻す　戻せなかった場合、このターンの戦闘は行われない|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=254&file=98.png,width=43,height=59)|《[[海賊船]]》|~|CENTER:5|CENTER:6|CENTER:|&color(red){■手札効果:}自分のアタッカーの勝利効果が発動した時、それが2回目以降の場合、自分のアタッカーと入れ替わる|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=312&file=102.png,width=43,height=59)|《[[アイスドラゴン]]》|CENTER:~|CENTER:5|CENTER:5|CENTER:|&color(red){ドラゴン族}&br()■【戦場・待機所】:レベル1から5までの各クリーチャーがいる場合、相手のアタッカーは攻撃できない|
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=142&file=96.png,width=43,height=59)|《[[人魚兵長]]》|~|CENTER:5|CENTER:5|CENTER:|&color(red){人魚族}&br()&color(blue){■使用効果:}人魚族クリーチャー1体と入れ替わる&br()&color(yellowgreen){■割引}このカードを使用するための魔力は「自分の人魚族クリーチャーの数」減る|
+|>|>|>|>|>|>|BGCOLOR(BLACK): |
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=83&file=103.png,width=43,height=59)|《[[シーサーペント]]》|CENTER:6|CENTER:5|CENTER:5|CENTER:|&color(blue){■使用効果:}全てのアタッカーを手札に戻す|
+|>|>|>|>|>|>|BGCOLOR(BLACK): |
+|&ref(http://www21.atwiki.jp/konocardgame?cmd=upload&act=open&pageid=111&file=104.png,width=43,height=59)|《[[青龍]]》|CENTER:8|CENTER:6|CENTER:7|CENTER:|&color(red){ドラゴン族}&br()&color(blue){■使用効果（消費魔力1）:}両者の全クリーチャーを入れ替える　このターンの戦闘は行われない|
+----
+*コメント（wiki編集できないやつはここに）
+#comment(below)
+- アイスドラゴンっていう新カード出た  -- 名無しさん  (2014-03-20 14:38:20)
+- 深海魚だののデッキデスどうにかならんかねー  -- 名無しさん  (2012-01-14 01:51:14)
+- 後攻がいるっていうけど後攻がいない色とかないし  -- 名無しさん  (2012-01-05 18:45:56)
+- いちおう煙があるけどね魔力増加  -- 名無しさん  (2012-01-04 20:10:48)
+- あ、もう詰んだなって思ったら青龍ちゃんで形勢逆転ってつまんないよね   --  (名無しさん)  &size(80%){2011-07-30 23:40:38}
+- スカイドラゴン　移動を許さないパターン：ウィザード[不動]   --  (名無しさん)  &size(80%){2011-09-18 07:53:03}
+----

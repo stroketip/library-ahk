@@ -1,0 +1,10 @@
+ifnotexist,C:\Users\stroketip\Desktop\newfile.txt
+{
+	FileAppend , テキスト, C:\Users\stroketip\Desktop\newfile.txt
+	return
+}
+else
+{
+	msgbox,"ファイルがあった場合の処理"
+	return
+}

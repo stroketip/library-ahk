@@ -1,0 +1,2 @@
+run,C:\Program Files (x86)\Hidemaru\Hidemaru.exe C:\Users\stroketip\Dropbox\d ÉfÅ[É^ï€ë∂\txt\list\ñÈÇ…Ç‚ÇÈÇ±Ç∆.txt
+exitapp

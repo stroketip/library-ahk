@@ -1,0 +1,1 @@
+C:\Program Files\IrfanView\i_view32.exe C:\Users\stroketip\Desktop\ScreenClip.png /crop=(18,60,89,117)

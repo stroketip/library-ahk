@@ -1,0 +1,3 @@
+WinWait, 無題 - ペイント, 
+IfWinNotActive, 無題 - ペイント, , WinActivate, 無題 - ペイント, 
+WinWaitActive, 無題 - ペイント, 

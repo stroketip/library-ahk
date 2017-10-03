@@ -1,0 +1,1 @@
+#include C:\Program Files\AutoHotkey\library\animationgif\AnimatedGifControl.ahk

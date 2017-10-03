@@ -1,0 +1,8 @@
+:*:zzokikaeru::
+{
+	
+	run,C:\Users\stroketip\Desktop\ショートカット\gc040711\gifcot.exe C:\Users\stroketip\Desktop\ショートカット\ahk\library\gifset\photo\okikaeru.gif
+
+	return
+}
+

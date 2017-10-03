@@ -1,0 +1,8 @@
+mousegetpos,xa,ya
+
+ImageSearch ,outX, outY, 0, 0, 100, 100, C:\Users\stroketip\Desktop\ショートカット\ahk\library\bmp\uwsc-config.bmp
+sleep,100
+
+mouseclick,left,outX,outY ,,,,
+
+mousemove,xa,ya

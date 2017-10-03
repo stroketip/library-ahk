@@ -1,0 +1,14 @@
+^b::
+{
+
+MouseClick, right,  724,  526
+Sleep, 100
+MouseClick, left,  747,  558
+Sleep, 100
+Send, {CTRLDOWN}c{CTRLUP}
+MouseClick, left,  754,  512
+Sleep, 100
+
+mousemove,100,50
+return
+}

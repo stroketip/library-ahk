@@ -1,0 +1,5 @@
+
+Warning: date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\Users\stroketip\Desktop\ショートカット\ahk\php-5.6.0-nts-Win32-VC11-x86\ahkfolder\hinode.php on line 10
+
+Warning: date_sunrise(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in C:\Users\stroketip\Desktop\ショートカット\ahk\php-5.6.0-nts-Win32-VC11-x86\ahkfolder\hinode.php on line 10
+Sat Jan 03 2015, sunrise time : 07:12

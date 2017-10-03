@@ -1,0 +1,1 @@
+netsh interface set interface "イーサネット 2" enabled

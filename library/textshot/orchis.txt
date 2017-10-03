@@ -1,0 +1,19 @@
+vk1Dsc07B & space::
+
+{	if (orchis ="hidemaru")
+	{
+		winactivate,ahk_class Afx:00ED0000:8:00000000:00000000:009D09F7
+		sleep,50
+		MouseGetPos, x0, y0
+		
+		MouseMove, 11,9,0
+		MouseClick, left
+		MouseMove, x0, y0
+		orchis = 
+		sleep,100
+		mouseclick,left
+		return
+	}
+	global orchis = "hidemaru"
+	run,C:\Program Files (x86)\Orchis\orchis.exe -d "èGä€" -g 1123 930 -s
+	return

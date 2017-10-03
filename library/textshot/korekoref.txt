@@ -1,0 +1,10 @@
+ifexist,C:\Users\stroketip\Desktop\newfile.pfw
+{
+	run,C:\Users\stroketip\Desktop\newfile.pfw
+	return
+}
+else
+{
+	msgbox,nakatta
+	return
+}

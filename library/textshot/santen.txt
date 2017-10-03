@@ -1,0 +1,13 @@
+^k::
+{
+	msgbox, "Ctrl+k"
+	return
+}
+vk1Dsc07B & k::
+{
+    If GetKeyState("Ctrl", "P")
+        msgbox, "Ctrl+–³•ÏŠ·+k"
+    Else
+        msgbox, "–³•ÏŠ·+k"
+    Return
+}

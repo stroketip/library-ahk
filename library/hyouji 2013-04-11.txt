@@ -1,0 +1,10 @@
+:*:,,input::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files\IrfanView\i_view32.exe C:\Users\stroketip\Documents\my project\input 2013-04-11.png /clipcopy /hide=7
+	return
+}
+
