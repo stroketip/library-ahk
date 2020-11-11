@@ -1,0 +1,50 @@
+digraph "hello world" {
+  compound = true;
+
+  {Hoge, Foo, Bar} -> Huga [lhead = cluster02];
+  Huga -> {Piyo01, Piyo02, Piyo03} [lhead = cluster_piyo, ltail = cluster02];
+
+  subgraph cluster01 {
+    {Hoge, Foo, Bar};
+
+    style = filled;
+    label = "hogehoge";
+  }
+
+  subgraph cluster02 {
+    Huga;
+
+    label = "hugahuga";
+  }
+
+  subgraph cluster_piyo {
+    {Piyo01, Piyo02, Piyo03};
+  }
+  
+  
+   dott3 [shape=record, label="{<f1> a |{<f2> b |<f3> d }|<F4> c }",]
+  dott4 [shape=Mrecord, label="{<f1> a2 |{<f2> b2 |<f3>d2 }|<F4> c2 }" ,]
+ 
+ dott3:f1 -> dott4:f2;
+ 
+}
+
+/* グラフ　サンプル
+graph adb{
+	
+     C_0 -- H_0 [type=s];
+     C_0 -- H_1 [type=s];
+     C_0 -- H_2 [type=s];
+     C_0 -- C_1 [type=s];
+     C_1 -- H_3 [type=s];
+     C_1 -- H_4 [type=s];
+     C_1 -- H_5 [type=s];
+}
+*/
+
+/* 簡単なやつ
+digraph G {
+	A -> B [label = "10"];
+	B -> B [label = "20"];
+}
+*/

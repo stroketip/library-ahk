@@ -1,0 +1,38 @@
+
+^b::
+{
+clipboard_backup = %ClipboardAll%
+clipboard=
+
+;--; Loop Read CSV match
+
+
+; 引数（検索する見出しの条件）
+a_mm1 = %A_YYYY%`/%a_mon%`/%a_mday%
+
+Clipboard := clipboard_backup
+
+;条件を検索するcsvファイル;
+Loop,Read,C:\Users\stroketip\Desktop\kl.csv
+{
+	texta := A_LoopReadLine
+	
+	stringleft,texta,texta,10
+
+	if(texta = a_mm1)
+	{
+		; マッチ後の処理　↓
+		textb:= a_loopreadline
+		stringtrimleft,textb,textb,11
+		textb := round(textb)
+
+		send,%textb%
+		; マッチ後の処理 ↑
+		return
+	}
+}
+
+;マッチしなかった場合の表示
+msgbox,リンクのテキストの中に、今日のデータがありませんでした。
+return
+}

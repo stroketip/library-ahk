@@ -1,0 +1,67 @@
+taikomoti: 
+{
+	a=C:\Users\stroketip\Desktop\ショートカット\ahk\library\clickimage\clickimage00019.png
+	clickimage(a)
+	a=
+	return
+}itame: 
+{
+	a=C:\Users\stroketip\Desktop\ショートカット\ahk\library\clickimage\clickimage00020.png
+	clickimage(a)
+	a=
+	return
+}iwasisi: 
+{
+	a=C:\Users\stroketip\Desktop\ショートカット\ahk\library\clickimage\clickimage00021.png
+	clickimage(a)
+	a=
+	return
+}wagahoi: 
+{
+	a=C:\Users\stroketip\Desktop\ショートカット\ahk\library\clickimage\clickimage00022.png
+	clickimage(a)
+	a=
+	return
+}hyoujihouhou: 
+{
+	a=C:\Users\stroketip\Desktop\ショートカット\ahk\library\clickimage\clickimage00023.png
+	clickimage(a)
+	a=
+	return
+}enokoro:
+{
+	a=C:\Users\stroketip\Desktop\ショートカット\ahk\library\clickimage\clickimage00024.png
+	clickimage(a)
+	a=
+	return
+}kakakkorodemobejikkorodemo:  
+{
+	a=C:\Users\stroketip\Desktop\ショートカット\ahk\library\clickimage\clickimage00025.png
+	clickimage(a)
+	a=
+	return
+}silibea-:
+{
+	a=C:\Users\stroketip\Desktop\ショートカット\ahk\library\clickimage\clickimage00025.png
+	clickimage(a)
+	a=
+	return
+}ukinuta: 
+{
+	a=C:\Users\stroketip\Desktop\ショートカット\ahk\library\clickimage\clickimage00026.png
+	clickimage(a)
+	a=
+	return
+}furosiki: 
+{
+	a=C:\Users\stroketip\Desktop\ショートカット\ahk\library\clickimage\clickimage00027.png
+	clickimage(a)
+	a=
+	return
+}:*:,,testimage:: 
+{
+	a=C:\Users\stroketip\Desktop\ショートカット\ahk\library\clickimage\clickimage00030.png
+	clickimage(a)
+	a=
+	return
+}

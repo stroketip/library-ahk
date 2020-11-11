@@ -1,24 +1,41 @@
-run,https://teachme.jp/
+settitlematchmode,2
 
-winwait,Teachme - Google Chrome
+run,C:\Program Files\Microsoft Office\Office15\EXCEL.EXE "C:\Users\stroketip\Dropbox\xls\dÉfÅ[É^\ç°ì˙ÇÃ.xlsx"
+
+winwait,- Excel
+
+sleep,1000
+
+send,^g
+sleep,200
+
+send,o2
+sleep,200
+
+send,{enter}
+sleep,200
+
 sleep,800
 
-winactivate,a
-WinMove, a,, ,, 1080, 1020
+send,{f2}
+sleep,200
+send,{tab}
+sleep,200
+send,+{tab}
+sleep,300
 
-mouseclick,left,972,127
+send,^c
+sleep,100
+/*
+send,!{f4}
+sleep,400
 
-sleep,550
-
-mouseclick,left,249,529
+send,n
 
 sleep,500
 
-send,{vk1Dsc07B}
-send,stroketip
-send,{tab}
-sleep,100
-send,nanamomo
-send,{enter}
-
+winactivate,Program Manager
+winactivate,ahk_class WorkerW
+send,#^+!s
+*/
 return

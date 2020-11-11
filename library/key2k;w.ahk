@@ -1,2 +1,2 @@
-run,C:\Program Files\AutoHotkey\AutoScriptWriter.exe
+run,C:\Users\stroketip\Desktop\ショートカット\ahk\md(ahk録画）.ahk
 return

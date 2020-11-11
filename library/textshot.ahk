@@ -484,4 +484,206 @@
 	
 	
 	return
+}:*:,,ifwin.::
+:*:,,ifwait.::{
+	clipboard_backup = %ClipboardAll%
+	clipboard=
+	
+	FileRead, temp, C:\Users\stroketip\Desktop\ショートカット\ahk\library\textshot\ifwin..txt
+
+	clipboard := temp
+	sleep,100
+	clipwait,1
+	
+	send,^v
+	
+	Clipboard := clipboard_backup
+	
+	
+	return
+}:*:,,seisuu::{
+	clipboard_backup = %ClipboardAll%
+	clipboard=
+	
+	FileRead, temp, C:\Users\stroketip\Desktop\ショートカット\ahk\library\textshot\seisuu.txt
+
+	clipboard := temp
+	sleep,100
+	clipwait,1
+	
+	send,^v
+	
+	Clipboard := clipboard_backup
+	
+	
+	return
+}:*:,,ahkkongetu::
+:*:,,ahkkonngetu::
+{
+	clipboard_backup = %ClipboardAll%
+	clipboard=
+	
+	FileRead, temp, C:\Users\stroketip\Desktop\ショートカット\ahk\library\textshot\,,ahkkongetu.txt
+
+	clipboard := temp
+	sleep,100
+	clipwait,1
+	
+	send,^v
+	
+	Clipboard := clipboard_backup
+	
+	
+	return
+}:*:,,ahkkyou::{
+	clipboard_backup = %ClipboardAll%
+	clipboard=
+	
+	FileRead, temp, C:\Users\stroketip\Desktop\ショートカット\ahk\library\textshot\ahkkyou.txt
+
+	clipboard := temp
+	sleep,100
+	clipwait,1
+	
+	send,^v
+	
+	Clipboard := clipboard_backup
+	
+	
+	return
+}:*:,,ahkkotosi::{
+	clipboard_backup = %ClipboardAll%
+	clipboard=
+	
+	FileRead, temp, C:\Users\stroketip\Desktop\ショートカット\ahk\library\textshot\ahkkotosi.txt
+
+	clipboard := temp
+	sleep,100
+	clipwait,1
+	
+	send,^v
+	
+	Clipboard := clipboard_backup
+	
+	
+	return
+}:*:,,csvmatch::
+:*:,,csvkensaku::
+:*:,,csvkennsaku::
+:*:,,csvfind::
+:*:,,csvserch::
+:*:,,csvsearch::{
+	clipboard_backup = %ClipboardAll%
+	clipboard=
+	
+	FileRead, temp, C:\Users\stroketip\Desktop\ショートカット\ahk\library\textshot\csvmatch.txt
+
+	clipboard := temp
+	sleep,100
+	clipwait,1
+	
+	send,^v
+	
+	Clipboard := clipboard_backup
+	
+	
+	return
+}:*:,,imeon.::{
+	clipboard_backup = %ClipboardAll%
+	clipboard=
+	
+	FileRead, temp, C:\Users\stroketip\Desktop\ショートカット\ahk\library\textshot\imeon..txt
+
+	clipboard := temp
+	sleep,100
+	clipwait,1
+	
+	send,^v
+	
+	Clipboard := clipboard_backup
+	
+	
+	return
+}:*:,,imeoff::{
+	clipboard_backup = %ClipboardAll%
+	clipboard=
+	
+	FileRead, temp, C:\Users\stroketip\Desktop\ショートカット\ahk\library\textshot\imeoff.txt
+
+	clipboard := temp
+	sleep,100
+	clipwait,1
+	
+	send,^v
+	
+	Clipboard := clipboard_backup
+	
+	
+	return
+}:*:,,ifime.::{
+	clipboard_backup = %ClipboardAll%
+	clipboard=
+	
+	FileRead, temp, C:\Users\stroketip\Desktop\ショートカット\ahk\library\textshot\ifime..txt
+
+	clipboard := temp
+	sleep,100
+	clipwait,1
+	
+	send,^v
+	
+	Clipboard := clipboard_backup
+	
+	
+	return
+}:*:,,kirisute::
+:*:,,int.::{
+	clipboard_backup = %ClipboardAll%
+	clipboard=
+	
+	FileRead, temp, C:\Users\stroketip\Desktop\ショートカット\ahk\library\textshot\kirisute.txt
+
+	clipboard := temp
+	sleep,100
+	clipwait,1
+	
+	send,^v
+	
+	Clipboard := clipboard_backup
+	
+	
+	return
+}:*:,,sishagonyuu::
+:*:,,sisyagonyuu::{
+	clipboard_backup = %ClipboardAll%
+	clipboard=
+	
+	FileRead, temp, C:\Users\stroketip\Desktop\ショートカット\ahk\library\textshot\sishagonyuu.txt
+
+	clipboard := temp
+	sleep,100
+	clipwait,1
+	
+	send,^v
+	
+	Clipboard := clipboard_backup
+	
+	
+	return
+}:*:,,kiriage::{
+	clipboard_backup = %ClipboardAll%
+	clipboard=
+	
+	FileRead, temp, C:\Users\stroketip\Desktop\ショートカット\ahk\library\textshot\kiriage.txt
+
+	clipboard := temp
+	sleep,100
+	clipwait,1
+	
+	send,^v
+	
+	Clipboard := clipboard_backup
+	
+	
+	return
 }

@@ -3,7 +3,7 @@ send,{blind}{ctrl up}{alt up}
 clipboard_backup = %ClipboardAll%
 
 send,^!s
-sleep,200
+sleep,1000
 
 	loop
 	{
@@ -18,6 +18,7 @@ sleep,200
 	
 	if (tempa = "" )
 	{
+
 		send,^d
 		sleep,100
 
@@ -29,10 +30,15 @@ sleep,200
 	}
 	
 	send,^+{f4}
+	sleep,100
+		send,^d
+
 	sleep,1250
 	send,^d
 
-	sleep,200
+	sleep,100
+	send,^!s
+	sleep,100
 	ifwinnotactive,ASticky:
 	{
 		exitapp

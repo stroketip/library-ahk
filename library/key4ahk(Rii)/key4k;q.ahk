@@ -1,0 +1,2 @@
+msgbox,q
+return

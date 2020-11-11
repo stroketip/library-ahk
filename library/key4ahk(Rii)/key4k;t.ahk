@@ -1,0 +1,2 @@
+msgbox,t‚Å‚·
+return

@@ -1,0 +1,13 @@
+{
+    Gosub, IMEGetstate
+    If (vimestate=0) ;ime‚ªoff‚È‚ç
+    {
+    ;Off‚¾‚©‚ç‰½‚à‚µ‚È‚¢
+    msgbox,off
+    }
+    else
+    {
+    msgbox,on
+    }
+    return
+}

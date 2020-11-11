@@ -8,5 +8,5 @@ process, close ,%ErrorLevel%
 return
 }
 
-run,C:\Users\stroketip\Desktop\ショートカット\ahk\run bat\utorrent.bat ,,hide
+run,C:\Users\stroketip\AppData\Roaming\uTorrent\uTorrent.exe
 return

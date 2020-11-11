@@ -1,0 +1,1 @@
+netsh interface set interface name="イーサネット 2" admin = enable

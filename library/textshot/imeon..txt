@@ -1,0 +1,14 @@
+{
+
+    Gosub, IMEGetstate
+    If (vimestate=1) ;ime‚ªon‚È‚ç
+    {
+		msgbox,on‚Å‚·
+    ;ON‚¾‚©‚ç‚È‚É‚à‚µ‚È‚¢
+    }
+    else
+    {
+    	msgbox,off‚Å‚· ;‘SŠp/”¼Špƒ{ƒ^ƒ“
+    }
+    return
+}

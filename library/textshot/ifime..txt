@@ -1,0 +1,27 @@
+{
+imeon:
+    Gosub, IMEGetstate
+    If (vimestate=1) ;ime‚ªon‚È‚ç
+    {
+		msgbox,on‚Å‚·
+    ;ON‚¾‚©‚ç‚È‚É‚à‚µ‚È‚¢
+    }
+    else
+    {
+    	msgbox,off‚Å‚· ;‘SŠp/”¼Špƒ{ƒ^ƒ“
+    }
+    return
+
+imeoff:
+    Gosub, IMEGetstate
+    If (vimestate=0) ;ime‚ªoff‚È‚ç
+    {
+    ;Off‚¾‚©‚ç‰½‚à‚µ‚È‚¢
+    msgbox,off
+    }
+    else
+    {
+    msgbox,on
+    }
+    return
+}

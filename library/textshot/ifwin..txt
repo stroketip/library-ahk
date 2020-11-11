@@ -1,0 +1,4 @@
+	WinWait, 将棋ウォーズ棋譜コピー - Google Chrome, 
+IfWinNotActive, 将棋ウォーズ棋譜コピー - Google Chrome,
+コピー - Google Chrome, 
+WinWaitActive, 将棋ウォーズ棋譜コピー - Google Chrome, 

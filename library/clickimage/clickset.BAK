@@ -1,0 +1,7 @@
+:*:input::
+{
+	a=C:\Users\stroketip\Desktop\ScreenClip.png
+	clickimage(a)
+	a=
+	return
+}

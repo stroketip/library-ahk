@@ -2,9 +2,8 @@
 {
 	send,^a
 	send,{del}
-    sleep,100
 	send,^d
-	sleep,100
+	sleep,50
 	run,C:\Program Files\IrfanView\i_view32.exe C:\Users\stroketip\Documents\my project\input 2013-04-11.png /clipcopy /hide=7
 	return
 }
@@ -122,16 +121,8 @@
 	run,http://www.blogger.com/blogger.g?blogID=468165018957980764#editor/src=dashboard
 	return
 }
-:*:,,seikihyougenn::
-{
-	send,^a
-	send,{del}
-    sleep,100
-	send,^d
-	sleep,100
-	run,C:\Program Files\IrfanView\i_view32.exe C:\Users\stroketip\Documents\my project\seikihyougenn.png /clipcopy /hide=7
-	return
-}
+
+
 :*:,,footstep::
 {
 	send,^a
@@ -397,10 +388,11 @@ send,^d
 :*?::++::
 :*?::--::
 {
+	send,{ctrl down}
+	send,a
+	send,c
+	send,{ctrl up}
 
-	send,^a
-	
-	send,^c
 	flag =
 	temp := clipboard
 	temp2 = %clipboard%
@@ -464,7 +456,7 @@ send,^d
 				send,^c
 				clipwait,1
 				
-				run,C:\Users\stroketip\Desktop\ショートカット\orzeszek-timer-1.6\Orzeszek Timer.exe,,,pid
+				run,C:\Users\stroketip\Desktop\ショートカット\orzeszek-timer-1.12-portable\Orzeszek Timer.exe,,,pid
 				
 				winwait,ahk_pid %pid%
 				winactivate,ahk_pid %pid%
@@ -607,13 +599,14 @@ NumpadDiv::
 
 
 :*:,,mindmap::
+:*:,,mindmanager::
 {
 	send,^a
 	send,{del}
     sleep,100
 	send,^d
 	sleep,100
-	run,"C:\Program Files (x86)\Mindjet\MindManager 11\MindManager.exe"
+	run,"C:\Program Files\MindManager 2020\MindManager.exe"
 	return
 }
 
@@ -624,7 +617,7 @@ NumpadDiv::
     sleep,100
 	send,^d
 	sleep,100
-	run,"C:\Program Files (x86)\Mindjet\MindManager 14\MindManager.exe"
+	run,"C:\Program Files\MindManager 2020\MindManager.exe"
 	return
 }
 
@@ -741,7 +734,7 @@ vk1Dsc07B & .::
 }
 
 :*?:,,s.::
-
+/*
 {
 	send,^a
 	send,^x
@@ -774,7 +767,7 @@ vk1Dsc07B & .::
 	
 	return
 }
-
+*/
 
 
 :*:,,winmovehelp::
@@ -808,6 +801,7 @@ vk1Dsc07B & .::
 	run,C:\Users\stroketip\Desktop\ショートカット\amarectv300c\AmaRecTV.exe
 	return
 }
+/*
 :*:,,stack::
 {
 	send,^a
@@ -818,6 +812,7 @@ vk1Dsc07B & .::
 	run,C:\Program Files\IrfanView\i_view32.exe C:\Users\stroketip\Documents\my project\stack.avi /hide=7
 	return
 }
+*/
 :*:,,taskforuda::
 :*:,,taskfolder::
 {
@@ -856,7 +851,7 @@ vk1Dsc07B & .::
     sleep,100
 	send,^d
 	sleep,100
-	run,C:\Program Files\Microsoft Office\Office15\VISIO.EXE
+	run,C:\Program Files\Microsoft Office\root\Office16\VISIO.EXE
 	return
 }
 :*:,,aozora::
@@ -943,6 +938,7 @@ vk1Dsc07B & .::
 }
 :*:,,book::
 :*:,,calibre::
+:*:,,caribre::
 {
 	send,^a
 	send,{del}
@@ -1076,7 +1072,9 @@ return
 
 	return
 }
-:*:,,menu::
+
+/*
+ :*:,,menu::
 {
 	send,^a
 	send,{del}
@@ -1086,6 +1084,8 @@ return
 	run,C:\Users\stroketip\Desktop\ショートカット\menuHackerst110a\menuhackerx64.exe
 	return
 }
+*/
+
 :*:,,shuushuuou:: 
 {
 	send,^a
@@ -1436,24 +1436,25 @@ WinWaitActive, Untitled.txr - TextRoom,
 	run,C:\Users\stroketip\Desktop\ショートカット\Box Sync.lnk
 	return
 }
-:*:,,gom:: 
+:*:,,gom.:: 
 {
 	send,^a
 	send,{del}
     sleep,100
 	send,^d
 	sleep,100
-	run,C:\Program Files (x86)\GRETECH\GomPlayer\GOM.EXE
+	run,C:\Program Files\GRETECH\GOMPlayerPlus\GOM64.EXE
 	return
 }
-:*:,,jimaku:: 
+:*:,,jimaku::
+:*:,,subscript.::
 {
 	send,^a
 	send,{del}
     sleep,100
 	send,^d
 	sleep,100
-	run,C:\Program Files (x86)\Subtitle Edit\SubtitleEdit.exe
+	run,C:\Program Files\Subtitle Edit\SubtitleEdit.exe
 	return
 }
 :*:,,decripter::
@@ -1717,16 +1718,7 @@ WinWaitActive, Untitled.txr - TextRoom,
 	run,http://e-mart.kagawa.jp/wp-admin/
 	return
 }
-:*:,,hpb::
-{
-	send,^a
-	send,{del}
-    sleep,100
-	send,^d
-	sleep,100
-	run,C:\Program Files (x86)\JustSystems\HOMEPAGEBUILDER16\bin\hpbpage.exe
-	return
-}
+
 :*:,,anime:: 
 {
 	send,^a
@@ -2202,10 +2194,10 @@ return
 	run,C:\Users\stroketip\Desktop\ショートカット\Console2\Console.exe
 	return
 }
-:*:,,kakikomi::
 :*:,,tegaki::
 :*:,,jikagaki::
 :*:,,kakikomu::
+:*:,,rakugaki.::
 {
 	send,^a
 	send,{del}
@@ -2350,7 +2342,7 @@ return
     sleep,100
 	send,^d
 	sleep,100
-	run,C:\Program Files\Adobe\Adobe Illustrator CC 2017\Support Files\Contents\Windows\Illustrator.exe
+	run,C:\Program Files\Adobe\Adobe Illustrator CC 2019\Support Files\Contents\Windows\Illustrator.exe
 	return
 }
 :*:,,zusimentaru::
@@ -2371,7 +2363,7 @@ return
     sleep,100
 	send,^d
 	sleep,100
-	run,C:\Program Files\Adobe\Adobe Photoshop CC 2014\Photoshop.exe
+	run,C:\Program Files\Adobe\Adobe Photoshop CC 2019\Photoshop.exe
 	return
 }
 :*:,,figure::
@@ -2382,7 +2374,7 @@ return
     sleep,100
 	send,^d
 	sleep,100
-	run,C:\Program Files (x86)\tetraface\Metasequoia4\Metaseq.exe
+	run,C:\Program Files\tetraface\Metasequoia4\Metaseq.exe
 	return
 }
 :*:,,hinode:: 
@@ -2437,7 +2429,6 @@ return
 }
 :*:,,mkdn::
 :*:,,mkdwn::
-:*:,,markdown::
 :*:,,mkdown::
 :*:,,ma-kudaun::
 :*:,,ma-kdown::
@@ -2729,7 +2720,7 @@ return
     sleep,100
 	send,^d
 	sleep,100
-	run,C:\Users\stroketip\Desktop\ショートカット\ahk\run bat\net kill.exe
+	run,"C:\Users\stroketip\Desktop\ショートカット\ahk\run bat\net disable.bat - 管理者権限で実行.lnk"
 	return
 }
 :*:,,alive:: 
@@ -2739,7 +2730,7 @@ return
     sleep,100
 	send,^d
 	sleep,100
-	run,C:\Users\stroketip\Desktop\ショートカット\ahk\run bat\net alive.exe
+	run,"C:\Users\stroketip\Desktop\ショートカット\ahk\run bat\net enable.bat -　管理者権限で実行.lnk"
 	return
 }
 :*:,,kakiokosi:: 
@@ -2754,6 +2745,8 @@ return
 }
 :*:,,airexp::
 :*:,,axp:: 
+::,,airdisk::
+::,,airdrive::
 {
 	send,^a
 	send,{del}
@@ -2764,7 +2757,7 @@ return
 	return
 }
 :*:,,scan::
-:*:,,capture:: 
+:*:,,capture.:: 
 :*:,,imgcap::
 :*:,,kyaputya::
 
@@ -2798,19 +2791,18 @@ return
 	return
 }
 :*:,,amareko::
-:*:,,rokuga::
 {
 	send,^a
 	send,{del}
     sleep,100
 	send,^d
 	sleep,100
-	run,C:\Users\stroketip\Desktop\ショートカット\amarecco310b\AmaRecCo.exe
-	WinWait, 設定, 
-	IfWinNotActive, 無題 - ペイント, , WinActivate, 設定, 
-	WinWaitActive, 無題 - ペイント, 
+	run,C:\Users\stroketip\Desktop\ショートカット\amarecco420\amarecco420\AmaRecCo.exe
+	WinWait, AmaRecCo, 
+	IfWinNotActive, AmaRecCo, , WinActivate, AmaRecCo, 
+	WinWaitActive, AmaRecCo, 
 	sleep,100
-	send,{enter}
+;	send,{enter}
 
 	return
 }
@@ -2839,7 +2831,7 @@ return
 	send,{del}
 	send,^d
 	sleep,100
-	run,C:\Program Files\Adobe\Adobe Captivate 8 x64\AdobeCaptivate.exe
+	run,C:\Program Files\Adobe\Adobe Captivate 9 x64\AdobeCaptivate.exe
 	return
 }
 :*:,,helpuwsc::
@@ -3135,6 +3127,7 @@ return
 :*:,,rpgmv::
 :*:,,rpgmake::
 :*:,,rpgmk::
+:*:,,rpgtuku-ru::
 {
 	send,^a
 	send,{del}
@@ -3169,7 +3162,28 @@ return
 	send,{del}
 	send,^d
 	sleep,50
-	run,https://www.pikara.jp/FTTH_cus/n/login.asp
+	run,https://portal.pikara.jp/ftth_cus/
+	
+	WinWait, Myピカラ - , 
+IfWinNotActive, Myピカラ - , , WinActivate, Myピカラ - , 
+WinWaitActive, Myピカラ - , 
+	
+	sleep,2000
+
+	mouseclick,l,100,613
+	sleep,400
+	mouseclick,l,116,653
+	sleep,100
+	mouseclick,l,87,628
+	sleep,300
+	mouseclick,l,145,657
+	sleep,300
+	mouseclick,l,92,695
+	sleep,300
+	mouseclick,l,113,687
+	sleep,2500
+	send,{tab 13}{enter}
+	
 	return
 }
 :*:,,formeditor::
@@ -3306,14 +3320,14 @@ Send, ^+i
 WinWait, 監察, 
 IfWinNotActive, 監察, , WinActivate, 監察, 
 WinWaitActive, 監察, 
-sleep,100
+sleep,500
 
 send,{right}
 
 
-sleep,400
+sleep,100
 
-MouseClick, left,  87,  86
+MouseClick, left,  57,  86
 Sleep, 100
 
 sleep,400
@@ -3323,12 +3337,15 @@ Sleep, 100
 WinWait, 監察, 
 IfWinNotActive, 監察, , WinActivate, 監察, 
 WinWaitActive, 監察, 
-MouseClick, left,  121,  148
-Sleep, 100
-MouseClick, left,  99,  188
-Sleep, 100
+sleep,100
+MouseClick, left,  75,  188
+Sleep, 200
+MouseClick, left,  21,  45
+Sleep, 200
 
-sleep,400
+winactivate,監察
+
+Sleep, 200
 
 MouseClick, left,  20,  40
 Sleep, 100
@@ -3460,6 +3477,10 @@ return
 }
 :*:,,googlebooks:: 
 :*:,,gbooks::
+:*:,,gbook.::
+:*:,,airbook::
+:*:,,googlebook::
+
 {
 	send,^a
 	send,{del}
@@ -3523,14 +3544,13 @@ return
 	send,^{2}
 	return
 }
-:*:,,ru-pe::
 :*:,,lupe::
 {
 	send,^a
 	send,{del}
 	send,^d
 	sleep,50
-	run,C:\Users\stroketip\Desktop\ショートカット\lupe\lupe\64bit\lupe64.exe
+	run,C:\Users\stroketip\Desktop\ショートカット\RectZoom131\RectZoom131\RectZoom_x64.exe
 	return
 }
 :*:,,clibor:: 
@@ -3542,7 +3562,7 @@ return
 	run,C:\Users\stroketip\Desktop\ショートカット\clibor\Clibor.exe
 	return
 }
-:*:,,anotate:: 
+:*:,,screenpresso::
 :*:,,annotatetion::
 :*:,,anotation::
 {
@@ -3572,7 +3592,8 @@ return
 	run,C:\Users\stroketip\Documents\my project\2016-03-21\youtube.xlsx
 	return
 }
-:*:,,pdf.::
+:*:,,pdfas.::
+:*:,,pdfa.::
 
 {
 	send,^a
@@ -3649,6 +3670,8 @@ return
 	run,C:\Users\stroketip\Desktop\ショートカット\Reflector 2.lnk
 	return
 }
+:*:,,voiceroid::
+:*:,,voice.::
 :*:,,tomoe::
 :*:,,tamiyasu::
 :*:,,turumaki::
@@ -3657,7 +3680,7 @@ return
 	send,{del}
 	send,^d
 	sleep,50
-	run,C:\Program Files (x86)\Voiceroid\AHS\Voiceroid+\tamiyasu\
+	run,C:\Program Files (x86)\AHS\VOICEROID2\VoiceroidEditor.exe
 	return
 }
 :*:,.zunko::
@@ -3667,7 +3690,7 @@ return
 	send,{del}
 	send,^d
 	sleep,50
-	run,C:\Program Files (x86)\AHS\VOICEROID+\zunko\VOICEROID.exe
+	run,C:\Program Files (x86)\AHS\VOICEROID2\VoiceroidEditor.exe
 	return
 }
 :*:,,yukari::
@@ -3677,7 +3700,7 @@ return
 	send,{del}
 	send,^d
 	sleep,50
-	run,C:\Users\stroketip\Desktop\ショートカット\VOICEROID＋ 結月ゆかり.lnk
+	run,C:\Program Files (x86)\AHS\VOICEROID2\VoiceroidEditor.exe
 
 
 	return
@@ -3729,7 +3752,7 @@ return
 	send,{del}
 	send,^d
 	sleep,50
-	run,C:\Users\stroketip\Desktop\ショートカット\WSplit 1.5.2\WSplit.exe
+	run,C:\Users\stroketip\Desktop\ショートカット\WSplit1.5.2\WSplit.exe
 	return
 }
 :*:,,rta1:: 
@@ -4047,7 +4070,9 @@ return
 	return
 }
 :*:,,wireflame::
-:*:,,wireflrame::
+:*:,,wireframe::
+:*:,,wflame::
+:*:,,wframe::
 {
 	send,^a
 	send,{del}
@@ -4073,7 +4098,7 @@ return
 	send,{del}
 	send,^d
 	sleep,50
-	run,C:\Program Files (x86)\Axure\Axure RP Pro 7.0 JP\AxureRP.exe
+	run,C:\Program Files (x86)\Axure\Axure RP Pro 7.0\AxureRP.exe
 	return
 }
 :*:,,egokoro::
@@ -4110,7 +4135,7 @@ return
 	send,{del}
 	send,^d
 	sleep,50
-	run,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Extensis\Suitcase Fusion 6\Suitcase Fusion 6.lnk
+	run,C:\Program Files (x86)\手書きでフォント\TegakideFont.exe
 	return
 }
 :*:,,zunko.:: 
@@ -4124,14 +4149,16 @@ return
 }
 :*:,,elise::
 :*:,,erise::
+:*:,,iria.::
 {
 	send,^a
 	send,{del}
 	send,^d
 	sleep,50
 	run,C:\Users\stroketip\Dropbox\d データ保存\apps\Eris\Eris.exe
-	sleep,1000
-	send,{tab 2}
+	winwait,Eris
+	sleep,300
+	send,{tab}
 	return
 }
 :*:,,eiga.::
@@ -4335,12 +4362,19 @@ return
 :*:,,edmax::
 :*:,,edraw::
 :*:,,flamework::
+:*:,,emdraw::
 {
 	send,^a
 	send,{del}
 	send,^d
 	sleep,50
-	run,C:\Program Files (x86)\Edraw Max\Edraw.exe
+	run,C:\Program Files (x86)\Edraw Max 9.4\EdrawMax.exe
+	
+
+	WinWaitActive, Edraw Max（試用版）
+;	sleep,1000
+	WinSetTitle, Edraw Max
+	
 	return
 }
 :*:,,relax::
@@ -4402,6 +4436,7 @@ return
 }
 :*:,,housou.::
 :*:,,xsplit::
+:*:,,haisinn::
 {
 	send,^a
 	send,{del}
@@ -4421,7 +4456,7 @@ return
 	return
 }
 :*:,,hub.::
-:*:,,gamecharacterhub.::,,se
+:*:,,gamecharacterhub.::
 {
 	send,^a
 	send,{del}
@@ -4542,7 +4577,7 @@ WinWait, Focus Booster,
 IfWinNotActive, Focus Booster, , WinActivate, Focus Booster, 
 WinWaitActive, Focus Booster, 
 
-winmove,Focus Booster,,1180,21
+winmove,Focus Booster,,1180,21,727,88
 
 mouseclick,left,707,26,,0
 
@@ -4587,7 +4622,14 @@ return
 	send,{del}
 	send,^d
 	sleep,50
-	run,C:\Program Files (x86)\Edraw Max\Edraw.exe
+	run,C:\Program Files (x86)\Edraw Max 9.4\EdrawMax.exe
+	
+	
+
+	WinWaitActive, Edraw Max（試用版）
+;	sleep,1000
+	WinSetTitle, Edraw Max
+
 	return
 }
 :*:,,graph.::
@@ -4628,7 +4670,7 @@ return
 	send,{del}
 	send,^d
 	sleep,50
-	run,C:\Program Files (x86)\ATOMI\ActivePresenter\ActivePresenter.exe
+	run,C:\Users\stroketip\Desktop\ショートカット\ActivePresenter.7.3.2.Portable\App\ActivePresenter7\ActivePresenter.exe
 	return
 }
 :*:,,prezencrack::
@@ -4665,6 +4707,11 @@ return
 :*:,,focus.::
 :*:,,pointer::
 :*:,,memo.::
+:*:,,ru-pe::
+:*:,,anotate::
+:*:,,presentation::
+:*:,,mouseaction::
+:*:,,kakikomi::
 {
 	send,^a
 	send,{del}
@@ -4682,7 +4729,7 @@ return
 	send,{del}
 	send,^d
 	sleep,50
-	run,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\ATOK\ATOK 2017\ATOKイミクル for ATOK 2017.lnk
+	run,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\ATOK\ATOK\ATOKイミクル for ATOK.lnk
 	return
 }
 :*:,,kobito:: 
@@ -4730,10 +4777,11 @@ return
 :*:,,focusriter::
 :*:,,focusliter::
 :*:,,focusw.::
-::,,brackwrite::
-::,,blackright::
-::,,brackwrite::
+:*:,,blackwrite::
+:*:,,blackright::
+:*:,,brackwrite::
 :*:,,blackwriter::
+:*:,,blackeditor::
 {
 	send,^a
 	send,{del}
@@ -4749,7 +4797,7 @@ return
 	send,{del}
 	send,^d
 	sleep,50
-	run,C:\Program Files (x86)\ATOMI\ActivePresenter\ActivePresenter.exe
+	run,C:\Users\stroketip\Desktop\ショートカット\ActivePresenter.7.3.2.Portable\App\ActivePresenter7\ActivePresenter.exe
 	return
 }
 :*:,,subtitle.::
@@ -4767,15 +4815,19 @@ return
 		clipboard_backup = %ClipboardAll%
 	clipboard=
 	
-	send,^a
-	sleep,100
-
-	send,^c
+	send,{ctrl down}
 	
-	clipwait,10
+	send,a
+	clipboard =
+	send,c
+	clipwait,1
+	sleep,100
 	
 	filename := clipboard
-	send,^d
+	send,d
+	send,{ctrl up}
+
+
 	
 loop,C:\Users\stroketip\Pictures\ahkftp\*.*
 {
@@ -4845,8 +4897,9 @@ FileAppend , %updd%, C:\ahkftp\upload.ftp
 
 temp=
 
-run,C:\ahkftp\upload.bat
+run,C:\Users\stroketip\Pictures\ahkftp\fc.bat
 
+clipboard=http://stroketip.web.fc2.com/uploaded/graphfile/up%loopN%.%kakutyousi%
 
 
 return
@@ -4869,6 +4922,10 @@ return
 :*:,,imgur.::
 :*:,,sharex::
 :*:,,uploda.::
+:*:,,toukou.::
+:*:,,gtoukou::
+:*:,,texttoukou::
+:*:,,update.::
 {
 	send,^a
 	send,{del}
@@ -4902,12 +4959,13 @@ return
 	
 
 :*:,,shogigui::
+:*:,,sgui.::
 {
 	send,^a
 	send,{del}
 	send,^d
 	sleep,50
-	run,C:\Users\stroketip\Desktop\ショートカット\ShogiGUIv0.0.6.11\ShogiGUIv0.0.6.11\ShogiGUI.exe
+	run,C:\Users\stroketip\Desktop\ショートカット\ShogiGUI.lnk
 	return
 }
 :*:,,eris.::
@@ -4975,6 +5033,7 @@ WinWaitActive, Eris,
 }
 :*:,,zenrin::
 :*:,,mapz.::
+:*:,,tizu.::
 {
 	send,^a
 	send,{del}
@@ -4991,5 +5050,2665 @@ WinWaitActive, Eris,
 	send,^d
 	sleep,50
 	run,C:\Users\stroketip\Desktop\ショートカット\柿木将棋Ⅸ.lnk
+	return
+}
+:*:,,abema:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://abema.tv/
+	return
+}
+:*:,,elmo::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\ShogiGUIv0.0.6.11\ShogiGUIv0.0.6.11\ShogiGUI.exe
+	return
+}
+:*:,,eita.::
+:*:,,yomita::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files (x86)\JustSystems\TaroPremium11\JspCReader.exe
+	return
+}:*:,,stext::
+:*:,,shogitxt::
+:*:,,shogitext::
+:*:,,stxt::
+:*:,,tumeshougi::
+{
+	run,C:\Users\stroketip\Desktop\ショートカット\ahk\将棋の駒入力.ahk
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\ShogiGUIv0.0.6.11\ShogiGUIv0.0.6.11\将棋棋譜.txt
+	return
+}
+:*:,,hirate::
+:*:,,shougitxt::
+{
+	run,C:\Users\stroketip\Desktop\ショートカット\ahk\将棋の駒入力.ahk
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\ShogiGUIv0.0.6.11\ShogiGUIv0.0.6.11\将棋棋譜平手.txt
+	return
+}
+:*:,,filelist::
+:*:,,filedrag::
+
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\furikubo\furikubo.exe
+	return
+}
+:*:,,shogidokoro.:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\Shogidokoro (1)\Shogidokoro\Shogidokoro.exe
+	return
+}
+:*:,,kifuc::
+:*:,,kifuk::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,http://pro.webkatu.com/warskifcopy/
+	return
+}
+:*:,,evernotek::
+:*:,,evernotef::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,evernote:///view/2489958/s23/1363a92d-84f4-4b76-9c9c-ebc748cde187/1363a92d-84f4-4b76-9c9c-ebc748cde187/
+	return
+}
+
+:*:,,kakitori::
+:*:,,jinorennshuu::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://kakijun.jp/main/jis2_ichiran.html
+	return
+}
+:*:,,kakijun::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,http://www.kaku-navi.com/kanji/kanji10992.html
+	sleep,1500
+	send,{tab 2}
+	return
+}
+:*:,,bgm.:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,D:\download\a_music\機能音源
+	return
+}
+:*:,,mt.::
+:*:,,multit.::
+:*:,,mtimer::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\Multi Timer.lnk
+	return
+}:*:,,tasukerareru::
+:*:,,sukuerukazu::
+:*:,,sukuukazu::
+:*:,,helpkazu::
+:*:,,helpnum::
+:*:,,tasukeru::
+{
+run,evernote:///view/2489958/s23/70e6e58d-56c8-4b15-82b5-fc775679fecd/70e6e58d-56c8-4b15-82b5-fc775679fecd/
+sleep,100
+
+WinWait, すべてのノートブック - stroketip@yahoo.co.jp - Evernote, 
+IfWinNotActive, すべてのノートブック - stroketip@yahoo.co.jp - Evernote, , WinActivate, すべてのノートブック - stroketip@yahoo.co.jp - Evernote, 
+WinWaitActive, すべてのノートブック - stroketip@yahoo.co.jp - Evernote, 
+MouseClick, left,  568,  8
+Sleep, 100
+MouseClick, left,  356,  750
+MouseClick, left,  356,  750
+
+
+return
+}
+
+:*:,,3dmake::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://www.tinkercad.com/things/5QDrT0JNKXY-shiny-migelo-vihelmo/editv2
+	return
+}
+:*:,,ithought::
+:*:,,ithout::
+:*:,,ithght::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files (x86)\toketaWare\iThoughts\iThoughts.exe
+	return
+}
+:*:,,mmap::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Dropbox\iThoughts
+	return
+}
+:*:,,anigif.::
+:*:,,captgif::
+:*:,,capturegif::
+:*:,,capgif.::
+:*:,,gifcap::
+:*:,,gifrec::
+
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\ScreenToGif.lnk
+	return
+}
+:*:,,taijuu:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,evernote:///view/2489958/s23/3878ab2a-0318-4b38-8440-94266b4d02d2/3878ab2a-0318-4b38-8440-94266b4d02d2/
+	return
+}
+:*:,,cal.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Dropbox\xls\dデータ\カロリー.xlsx
+	return
+}
+:*:,,ifunbox::
+:*:,,ifun.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\iFunbox.lnk
+	return
+}:*:,,aikonset::
+:*:,,iconsets::
+:*:,,iconset.::
+:*:,,icon8::
+:*:,,icons8::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files (x86)\Icons8\Icons8.exe
+	return
+}
+:*:,,facerig::
+:*:,,vyou.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\FaceRig.lnk
+	return
+}
+:*:,,shapes.::
+
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://www.graphviz.org/doc/info/shapes.html
+	return
+}
+:*:,,zeal:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\Zeal.lnk
+	return
+}
+:*:,,resophnote:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\ResophNotes\ResophNotes.exe
+	return
+}
+:*:,,sketchup:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\SketchUp 2017.lnk
+	return
+}
+:*:,,reiauto::
+:*:,,layout::
+:*:,,sakuzu::
+:*:,,3d.::
+:*:,,3dmodel::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\LayOut 2017.lnk
+	return
+}
+:*:,,epic.::
+:*:,,epicpen::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\Epic Pen.lnk
+	return
+}
+:*:,,kamera::
+:*:,,icamera::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\iVCam.lnk
+	return
+}
+:*:,,sphinx:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\rpg-anada\source
+	return
+}
+:*:,,nc.::
+:*:,,sessaku::
+:*:,,gcode::
+:*:,,gko-do::
+:*:,,cam.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\CIMCO\CIMCOEdit8\CIMCOEdit.exe
+	return
+}
+:*:,,vsc::
+:*:,,visuals.::
+:*:,,vstdio::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\Visual Studio Code.lnk
+	return
+}
+:*:,,fbar.::
+:*:,,foobar::
+:*:,,fber.::
+:*:,,foober::
+:*:,,fu-ba-::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\foobar2000.lnk
+	return
+}
+:*:,,tirano::
+:*:,,tilano::
+:*:,,tyrano::
+:*:,,thirano::
+:*:,,tbuilder.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,"C:\Users\stroketip\Desktop\ショートカット\tyranobuilder_v180_win_ja_std\tyranobuilder_v180_win_ja_std\tyranobuilder.exe"
+	return
+}
+:*:,,trello:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files\WindowsApps\45273LiamForsyth.PawsforTrello_2.10.3.0_x64__7pb5ddty8z1pa\app\Trello.exe
+	return
+}
+:*:,,button.:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files (x86)\Easy Button Menu Maker\btnmenu.exe
+	return
+}
+:*:,,business::
+:*:,,bijinesu::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\MindGenius 2018.lnk
+	return
+}
+:*:,,jinnrou:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\人狼 J.lnk
+	return
+}
+:*:,,html.:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\HTMLPad 2018.lnk
+	return
+}:*:,,css.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\Rapid CSS 2018.lnk
+	return
+}
+:*:,,graphviz::
+:*:,,dotg::
+:*:,,dott::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://ja.wikipedia.org/wiki/DOT言語
+	FileCopy, C:\Users\stroketip\Desktop\ショートカット\ahk\dot\サンプル.dot, C:\Users\stroketip\Desktop\サンプル.dot
+	return
+}
+:*:,,bandi.::
+:*:,,bandhi.::
+:*:,,vandhi::
+:*:,,rokuga::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files (x86)\Bandicam\bdcam.exe
+	return
+}
+
+:*:,,bandia::
+:*:,,bandhia::
+:*:,,bandir::
+:*:,,bandhir::
+:*:,,bandig::
+:*:,,bandhig::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files (x86)\Bandicam\Loader.exe
+	return
+}
+:*:,,recovery:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\Auslogics File Recovery.lnk
+	return
+}
+:*:,,comipo:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\AppData\Local\Web Technology\ComiPo!\ComiPo.exe
+	return
+}
+:*:,,googlesheet:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://docs.google.com/spreadsheets/u/0/
+	return
+}
+:*:,,googlesite::
+:*:,,gsite.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://sites.google.com/new?usp=jotspot_si
+	return
+}
+:*:,,wiki.::
+:*:,,subscripton::
+:*:,,scripton::
+:*:,,scription::
+:*:,,subscription::
+:*:,,scribbeton::
+:*:,,scribeton::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\Scribbleton.lnk
+	return
+}
+:*:,,fileuploda::
+:*:,,fuploda::
+:*:,,uplodaf:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\FileUploader .Portable\FileUploader.exe
+	return
+}
+:*:,,nox:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\Nox.lnk
+	return
+}
+:*:,,f.::
+:*:,,ftp.::
+{
+	send,{ctrl down}
+	
+	send,a
+	clipboard =
+	send,c
+	clipwait,1
+	sleep,100
+	send,d
+
+	send,{ctrl up}
+	
+run,C:\Program Files (x86)\ffftp\FFFTP.exe
+
+
+WinWait, ホスト一覧, 
+IfWinNotActive, ホスト一覧, , WinActivate, ホスト一覧, 
+WinWaitActive, ホスト一覧, 
+MouseClick, left,  235,  188
+Sleep, 100
+WinWait, FFFTP (*), 
+IfWinNotActive, FFFTP (*), , WinActivate, FFFTP (*), 
+WinWaitActive, FFFTP (*), 
+MouseClick, left,  50,  62
+Sleep, 100
+WinWait, 接続先, 
+IfWinNotActive, 接続先, , WinActivate, 接続先, 
+WinWaitActive, 接続先, 
+Send, ^v
+sleep,100
+MouseClick, left,  133,  151
+MouseClick, left,  133,  151
+Sleep, 100
+
+return
+}
+
+:*:,,regedit::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Windows\WinSxS\amd64_microsoft-windows-registry-editor_31bf3856ad364e35_10.0.17134.1_none_d9af41bc45030c81\regedit.exe
+	return
+}
+
+:*:,,catalog::
+:*:,,cart.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\Shopping.Catalog.2.4.9.19.Portable\FlipShoppingCatalogPortable.exe
+	return
+}
+:*:,,diagraph::
+:*:,,gram.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\Grapholite.lnk
+	return
+}
+:*:,,form.:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\awebform.lnk
+	return
+}
+:*:,,qr.:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files (x86)\Barcode Generator\BarcodeGenerator.exe
+	return
+}
+:*:,,scap.::
+:*:,,scrap.::
+:*:,,scrapbox*::
+::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://scrapbox.io/stroketip/
+	return
+}
+:*:,,vob.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files (x86)\4Videosoft Studio\4Videosoft Video Converter Ultimate\4Videosoft Video Converter Ultimate.exe
+	return
+}
+:*:,,qrl::
+:*:,,qrr::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\qtarou_v12\QTAROU.exe
+	return
+}
+:*:,,gdrive:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://drive.google.com/drive/u/0/my-drive
+	return
+}
+:*:,,autocad:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,"C:\Program Files\Autodesk\AutoCAD LT 2020\acadlt.exe" /language "ja-JP"
+	return
+}
+:*:,,slack:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files\WindowsApps\91750D7E.Slack_3.3.3.0_x64__8she8kybcnzg4\app\Slack.exe
+	return
+}
+:*:,,pyhelp:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://docs.python.jp/2.7/library/index.html
+	return
+}
+:*:,,python:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Python27\Scripts
+	return
+}
+:*:,,geturl::
+:*:,,hyperlink:: 
+{
+settitlematchmode,2
+clipboard_backup = %ClipboardAll%
+clipboard=
+
+run,C:\Program Files\Microsoft Office\Office16\EXCEL.EXE
+
+WinWait, - Excel, 
+IfWinNotActive, - Excel, , WinActivate, - Excel, 
+WinWaitActive, - Excel, 
+
+sleep,700
+send,{enter}
+
+WinWait, Book1 - Excel, 
+IfWinNotActive, Book1 - Excel, , WinActivate, Book1 - Excel, 
+WinWaitActive, Book1 - Excel, 
+sleep,100
+Send, {ALTDOWN}{F11}{ALTUP}
+WinWait, Microsoft Visual Basic for Applications - Book1, 
+IfWinNotActive, Microsoft Visual Basic for Applications - Book1, , WinActivate, Microsoft Visual Basic for Applications - Book1, 
+WinWaitActive, Microsoft Visual Basic for Applications - Book1, 
+sleep,100
+Send, {ALTDOWN}{ALTUP}i
+sleep,100
+send,m
+sleep,100
+
+clipboard=
+FileRead, temp, C:\Users\stroketip\Desktop\ショートカット\ahk\library-ahk\clipout\avg.txt
+clipboard := temp
+clipwait,1
+sleep,100
+send,^v
+sleep,100
+
+send,!{f4}
+sleep,100
+
+WinWait, Book1 - Excel, 
+IfWinNotActive, Book1 - Excel, , WinActivate, Book1 - Excel, 
+WinWaitActive, Book1 - Excel, 
+sleep,700
+send,=geturl	return
+}
+:*:,,camera:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\mfinder401\MagicalFinder.exe
+	return
+}
+
+:*:,,mp3cut::
+:*:,,musiccut::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\AE421\AEditor.exe
+	return
+}
+:*:,,ia.::
+:*:,,writer::
+:*:,,markdown::
+:*:,,iawriter::
+:*:,,aiwriter::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\iA Writer.lnk
+	return
+}
+:*:,,ymm::
+:*:,,yukkuri::
+:*:,,ymaker::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\YukkuriMovieMaker_v3.4.8.1\YukkuriMovieMaker_v3.exe
+	return
+}
+:*:,,gifcot::
+{
+	clipboard_backup = %ClipboardAll%
+	clipboard=
+	send,^a
+	send,{del}
+	clipboard= C:\Users\stroketip\Desktop\ショートカット\gc040711\gifcot.exe
+
+	sleep,100
+	send,^v
+	sleep,50
+	send,^w
+	Clipboard := clipboard_backup
+	return
+}:*:,,alexa:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://alexa.amazon.co.jp/spa/index.html#cards
+	return
+}
+:*:,,mylife::
+:*:,,mikamera::
+:*:,,micamera::
+
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://www.youtube.com/live_dashboard?o=U
+	return
+}
+::,,help.::
+:*:,,helpm::
+::,,helpmanual.::
+::,,makemanual::
+
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files (x86)\EC Software\HelpAndManual7\HELPMAN.EXE
+	return
+}
+:*:,,mm.::
+
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\Markdown Monster.lnk
+	return
+}
+:*:,,bootstrap:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\Bootstrap Studio.lnk
+	return
+}
+:*:,,presso:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\AppData\Local\Learnpulse\Screenpresso\Screenpresso.exe
+	return
+}
+:*:,,l.::
+{
+	run,C:\Users\stroketip\Desktop\ショートカット\ahk\library\stickiecolor\stickiecolor.ahk
+	return
+}
+:*:,,vegas.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files\Sony\Vegas Pro 13.0\vegas130.exe
+	return
+}
+:*:,,dashbord:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\ahk\run bat\edge_bord.exe
+	return
+}
+:*:,,endnote:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files (x86)\EndNote X9\EndNote.exe
+	return
+}
+:*:,,voice2.:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files (x86)\AHS\VOICEROID2\VoiceroidEditor.exe
+	return
+}
+:*:,,googlemap::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://www.google.com/maps/
+	return
+}
+:*:,,grep.:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files (x86)\Hidemaru\Hidemaru.exe
+
+WinWait, ahk_class Hidemaru32Class, 
+IfWinNotActive, ahk_class Hidemaru32Class, , WinActivate, ahk_class Hidemaru32Class, 
+WinWaitActive, ahk_class Hidemaru32Class, 
+
+send,{alt}
+sleep,100
+
+send,s
+sleep,100
+
+send,g
+
+return
+}
+:*:,,nchelp:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://nc-program.s-projects.net/g-code.html
+	return
+}
+:*:,,pdfa.:: 
+:*:,,pdf.::
+:*:,,acrobat::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files (x86)\Adobe\Acrobat DC\Acrobat\Acrobat.exe
+	return
+}
+:*:,,pdfanotate::
+:*:,,pdfhennsyuu::
+:*:,,pdfhenshuu::
+:*:,,pdfh::
+:*:,,pdfkakikomi::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files (x86)\PDF Annotator\PDFAnnotator.exe
+	return
+}
+
+:*:,,g.::
+{
+	settitlematchmode,2
+	
+	clipboard_backup = %ClipboardAll%
+	clipboard=
+
+send,{ctrl down}
+send,a
+sleep,100
+send,c
+clipwait,1
+
+	sleep,300
+	
+	send,{del}
+	send,{vk1Dsc07B}
+;	send,d
+send,{ctrl up}	
+	
+	sleep,100
+;	msgbox,%clipboard%
+
+;2020-02-08のような形式が含まれていた場合の処理
+;a1,a2,a3に年、月、日が入ってくれる
+foundpos := regexmatch(clipboard,"(\d\d\d\d)-(\d\d)-(\d\d)",a)
+if(foundpos>=1)
+{
+	
+	clipboard := regexreplace(clipboard,"(\d\d\d\d)-(\d\d)-(\d\d)","")
+	
+	run, C:\Program Files (x86)\Google\Chrome\Application\chrome.exe "--app=https://www.google.com/calendar/render?hl=ja&gsessionid=_ypFMVaqizEropmg95O91w"
+	
+	WinWait, Google カレンダー -, 
+IfWinNotActive, Google カレンダー -, , WinActivate, Google カレンダー -, 
+WinWaitActive, Google カレンダー -, 
+
+
+;グーグルに登録
+
+	sleep,1900
+	
+	MouseGetPos, x0, y0
+	MouseMove, 194,117
+	MouseClick, left
+MouseMove, x0, y0
+
+	sleep,700
+	send,q
+	sleep,300
+;	msgbox,%a2%
+	
+	sleep,400
+	send,{tab}
+	send,+{tab}
+;	send,%a2%
+;a2はタイトル
+	send,^v
+	
+	sleep,300
+	send,{tab 2}
+	
+	clipboard = %a1%-%a2%-%a3%
+	clipwait,1
+	sleep,300
+;a1は日付
+	send,^v
+	
+	sleep,100
+	send,{enter}
+	sleep,100
+	send,{enter}
+	
+	Clipboard := clipboard_backup
+	
+	return
+;	マッチしませんでした
+
+}
+else
+{
+ foundpos := regexmatch(clipboard,"(\d{1,2})/(\d\d)",a)
+	if(foundpos>=1){
+	
+	clipboard := regexreplace(clipboard,"(\d){1,2}/(\d\d)","")
+
+
+	run, C:\Program Files (x86)\Google\Chrome\Application\chrome.exe "--app=https://www.google.com/calendar/render?hl=ja&gsessionid=_ypFMVaqizEropmg95O91w"
+	
+	WinWait, Google カレンダー -, 
+IfWinNotActive, Google カレンダー -, , WinActivate, Google カレンダー -, 
+WinWaitActive, Google カレンダー -, 
+
+
+;グーグルに登録
+
+	sleep,1900
+	MouseGetPos, x0, y0
+	MouseMove, 194,117
+	MouseClick, left
+	MouseMove, x0, y0
+	
+	sleep,500
+	send,q
+;	sleep,300
+;	msgbox,%a2%
+	
+	sleep,400
+	send,{tab}
+	send,+{tab}
+;	send,%a2%
+;a2はタイトル
+	send,^v
+	
+	sleep,300
+	send,{tab 2}
+	
+	clipboard = %a1%/%a2%
+	clipwait,1
+	sleep,300
+;a1は日付
+	send,^v
+	
+	sleep,100
+	send,{enter}
+	sleep,100
+	send,{enter}
+	
+	Clipboard := clipboard_backup
+	
+	return
+
+	}
+
+
+}
+
+
+
+	stringreplace,clipboard,clipboard, %A_Space% ,',All
+
+	Loop, Parse, clipboard, ' , ', 
+	{
+	a%a_index% := a_loopfield
+	}	
+	
+	run, C:\Program Files (x86)\Google\Chrome\Application\chrome.exe "--app=https://www.google.com/calendar/render?hl=ja&gsessionid=_ypFMVaqizEropmg95O91w"
+	
+	WinWait, Google カレンダー -, 
+IfWinNotActive, Google カレンダー -, , WinActivate, Google カレンダー -, 
+WinWaitActive, Google カレンダー -, 
+
+
+;グーグルに登録
+
+	sleep,200
+	
+	send,q
+	sleep,300
+;	msgbox,%a2%
+	clipboard:= a2
+	clipwait,1
+	
+	sleep,400
+	send,{tab}
+	send,+{tab}
+;	send,%a2%
+;a2はタイトル
+	send,^v
+	
+	sleep,300
+	send,{tab 2}
+	
+	clipboard := a1
+	clipwait,1
+	sleep,300
+;a1は日付
+	send,^v
+	
+	sleep,100
+	send,{enter}
+	sleep,100
+	send,{enter}
+	
+	Clipboard := clipboard_backup
+	
+	return
+	
+}
+:*:,,shokuhin::
+:*:,,syokuhinn::
+:*:,,karori-::
+:*:,,eiyou::
+:*:,,shokuzai::
+:*:,,syokuzai::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\栄養価計算 HealthyMaker.LNK
+	return
+}
+:*:,,0daydown:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://www.0daydown.com/category/software/windows
+	return
+}
+:*:,,mpc.:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\K-Lite Codec Pack\Media Player Classic.lnk
+	return
+}
+:*:,,helppython::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://www.python-izm.com/basic/string/
+	return
+}
+:*:,,helpjavascript::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,http://www.openspc2.org/reibun/javascript/#1
+	return
+}
+:*:,,sigil.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\Sigil.lnk
+	return
+}
+:*:,,mybook.::
+:*:,,ebook.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://play.google.com/books
+	return
+}
+:*:,,webeditor::
+:*:,,wysiwig::
+:*:,,wisiwig::
+:*:,,wysiwig::
+:*:,,wisywig::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files (x86)\WYSIWYG Web Builder 11\WebBuilder.exe
+	return
+}
+:*:,,ncv.:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\NCVIEWER5.2\NcViewer.exe
+	return
+}
+:*:,,today:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,evernote:///view/2489958/s23/56faa3a9-92cb-4fdc-91cc-583d442d27b4/56faa3a9-92cb-4fdc-91cc-583d442d27b4/
+	return
+}
+:*:,,righton:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+		run,C:\Users\stroketip\Desktop\ショートカット\D-SendMail_117(+omnifocus\D-SendMail.exe
+
+WinWait, D-SendMail, 
+IfWinNotActive, D-SendMail, , WinActivate, D-SendMail, 
+WinWaitActive, D-SendMail, 
+
+	sleep,100
+	send,{tab 8}
+	sleep,50
+	send,{#}
+	send,righton
+	sleep,50
+	winactivate,D-SendMail
+	send,{tab}
+	send,{#}
+	send,righton
+	sleep,100
+	send,{tab}
+	sleep,100
+	send,{enter}
+	clipboard_backup = %ClipboardAll%
+	return
+}
+:*:,,rightoff::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+		run,C:\Users\stroketip\Desktop\ショートカット\D-SendMail_117(+omnifocus\D-SendMail.exe
+
+WinWait, D-SendMail, 
+IfWinNotActive, D-SendMail, , WinActivate, D-SendMail, 
+WinWaitActive, D-SendMail, 
+
+	sleep,100
+	send,{tab 8}
+	sleep,100
+	send,{#}
+	send,rightoff
+	sleep,100
+	send,{tab}
+	send,{#}
+	send,rightoff
+	sleep,100
+	send,{tab}
+	sleep,100
+	send,{tab 8}
+	send,{enter}
+	clipboard_backup = %ClipboardAll%
+	return
+}
+:*:,,cooler.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+		run,C:\Users\stroketip\Desktop\ショートカット\D-SendMail_117(+omnifocus\D-SendMail.exe
+
+WinWait, D-SendMail, 
+IfWinNotActive, D-SendMail, , WinActivate, D-SendMail, 
+WinWaitActive, D-SendMail, 
+
+	sleep,100
+	send,{tab 8}
+	sleep,100
+	send,{#}
+	send,cooleron
+	sleep,100
+	send,{tab}
+	send,{#}
+	send,cooleron
+	sleep,100
+	send,{tab}
+	sleep,100
+	send,{tab 8}
+	send,{enter}
+	clipboard_backup = %ClipboardAll%
+	return
+}
+:*:,,cooleroff::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+		run,C:\Users\stroketip\Desktop\ショートカット\D-SendMail_117(+omnifocus\D-SendMail.exe
+
+WinWait, D-SendMail, 
+IfWinNotActive, D-SendMail, , WinActivate, D-SendMail, 
+WinWaitActive, D-SendMail, 
+
+	sleep,100
+	send,{tab 8}
+	sleep,100
+	send,{#}
+	send,cooleroff
+	sleep,100
+	send,{tab}
+	send,{#}
+	send,cooleroff
+	sleep,100
+	send,{tab}
+	sleep,100
+	send,{tab 8}
+	send,{enter}
+	clipboard_backup = %ClipboardAll%
+	return
+}
+
+>+^k::
+{
+	send,^c
+	sleep,50
+	
+	run,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\ATOK\ATOK 2017\ATOKイミクル for ATOK 2017.lnk
+	WinWait, ATOKイミクル, 
+IfWinNotActive, ATOKイミクル, , WinActivate, ATOKイミクル, 
+WinWaitActive, ATOKイミクル, 
+
+sleep,300
+
+winactivate ATOKイミクル
+
+sleep,500
+
+MouseGetPos, x0, y0
+MouseMove, 121, 38
+MouseClick, left
+
+send,^v
+send,{enter}
+
+return
+}
+
+:*:,,r.::
+:*:,,taberu::
+:*:,,shokuji::
+
+{
+
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+		run,C:\Program Files (x86)\HM32\HM32.EXE
+
+
+	
+	WinWait, - 栄養価計算ヘルシーメーカー432 
+IfWinNotActive, - 栄養価計算ヘルシーメーカー432 , WinActivate, - 栄養価計算ヘルシーメーカー432 
+WinWaitActive, - 栄養価計算ヘルシーメーカー432
+sleep,1500
+
+gosub , konndate
+mouseclick,l,20,20,,,,r
+sleep,300
+gosub , shokuhinn
+mouseclick,l,20,20,,,,r
+return
+}
+
+
+konndate:
+{
+	a=C:\Users\stroketip\Desktop\ショートカット\ahk\library\clickimage\clickimage00010.png
+	clickimage(a)
+	a=
+	return
+}
+shokuhinn:
+{
+	a=C:\Users\stroketip\Desktop\ショートカット\ahk\library\clickimage\clickimage00014.png
+	clickimage(a)
+	a=
+	return
+}
+:*:,,fukugen.::
+:*:,,sakujo.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files (x86)\Auslogics\File Recovery\FileRecovery.exe
+	return
+}
+
+:*:carori-::
+:*:,,tabeta::
+:*:,,shokuhinn::
+{
+
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+		run,C:\Program Files (x86)\HM32\HM32.EXE
+
+
+	
+	WinWait, - 栄養価計算ヘルシーメーカー432 
+IfWinNotActive, - 栄養価計算ヘルシーメーカー432 , WinActivate, - 栄養価計算ヘルシーメーカー432 
+WinWaitActive, - 栄養価計算ヘルシーメーカー432
+sleep,1500
+
+gosub , de-ta
+mouseclick,l,20,20,,,,r
+mouseclick,l
+
+sleep,500
+send,{tab}
+send,+{tab}
+sleep,100
+send,{space}
+
+return
+}
+
+
+de-ta:
+{
+	a=C:\Users\stroketip\Desktop\ショートカット\ahk\library\clickimage\clickimage00015.png
+	clickimage(a)
+	a=
+	return
+}
+shinguao: 
+{
+	a=C:\Users\stroketip\Desktop\ショートカット\ahk\library\clickimage\clickimage00016.png
+	clickimage(a)
+	a=
+	return
+}
+
+
+:*:,,live.::
+{
+	run,msedge.exe "https://studio.youtube.com/channel/UCz--C7s3tWRERZnZ2DK7pZA"
+	
+	/*
+	run,https://www.youtube.com/
+	WinWait, YouTube - Google Chrome, 
+IfWinNotActive, YouTube - Google Chrome, , WinActivate, YouTube - Google Chrome, 
+WinWaitActive, YouTube - Google Chrome, 
+	sleep,2000
+	
+;	mousemove,1200,0
+	scorex=
+	gosub,shinguao
+	if(scorex = 2)
+	{
+		scorex=0
+		gosub,taikomoti
+		if(scorex = 2)
+		{
+			scorex=0
+			gosub,itame
+			if(scorex =2)
+			{
+				scorex=0
+				gosub,iwasisi
+				if(scorex = 2)
+				{
+					scorex=0
+					gosub,wagahoi
+					if(scorex = 2)
+					{
+						scorex=0
+						gosub,hyoujihouhou
+						if(scorex = 2)
+						{
+							scorex=0
+							gosub,enokoro
+							if(scorex =2)
+							{
+								scorex=0
+								gosub,kakakkorodemobejikkorodemo
+								if(scorex =2)
+								{
+									scorex=0
+									gosub,silibea-
+									if(scorex =2)
+									{
+										scorex=0
+										gosub,ukinuta
+										if(scorex =2)
+										{
+											scorex=0
+											gosub,furosiki
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+			
+		}
+	
+
+	
+	mouseclick,l,20,20,,,,r
+	mouseclick,l
+	sleep,700
+	
+	gosub,akaunnto
+	mouseclick,l,20,20,,,,r
+	mouseclick,l
+	sleep,2100
+	
+	
+	gosub,stroketip
+	mouseclick,l,20,20,,,,r
+	mouseclick,l
+	
+	
+	sleep,2000
+	
+	send,^l
+	clipboard_backup = %ClipboardAll%
+	clipboard=
+	sleep,100
+
+
+	clipboard =https://www.youtube.com/live_dashboard_splash
+	
+	clipwait,1
+	sleep,100
+	
+	send,^v
+	sleep,100
+	
+	send,{enter}
+
+	*/
+return
+}
+/*
+akaunnto: 
+{
+	a=C:\Users\stroketip\Desktop\ショートカット\ahk\library\clickimage\clickimage00017.png
+	clickimage(a)
+	a=
+	return
+}stroketip: 
+{
+	a=C:\Users\stroketip\Desktop\ショートカット\ahk\library\clickimage\clickimage00018.png
+	clickimage(a)
+	a=
+	return
+}
+*/:*:,,mp3tube:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://www.tunestotube.com/
+	return
+}:*:,,gomenc:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\GOM\GOM Encoder (x64).lnk
+	return
+}
+:*:,,openclickimage::
+:*:,,openimageclick::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\ahk\library\clickimage
+	return
+}
+:*:,,voxel:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\MagicaVoxel-0.97.1-win-mac\MagicaVoxel\MagicaVoxel-win.exe
+	return
+}
+:*:,,gsheet::
+:*:,,spreadsheet::
+:*:,,sheet.::
+:*:,,googlespread::
+:*:,,googlespled::
+:*:,,googlespred::
+:*:,,spredsheet::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://docs.google.com/spreadsheets/u/0/
+	return
+}
+:*:,,gmail.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://mail.google.com/mail/u/0/#inbox
+	return
+}
+:*:,,puremia::
+:*:,,premier.::
+:*:,,premiere::
+:*:,,premiear::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files\Adobe\Adobe Premiere Pro CC 2019\Adobe Premiere Pro.exe
+	return
+}:*:,,kannban::
+:*:,,kanban:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\AppData\Local\Mindjet\MindManager\20\Library\ENU\Templates\Blank Templates\Kanban.mmat
+	return
+}
+:*:,,autocad::
+:*:,,cad.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\AutoCAD LT 2020.lnk
+	return
+}
+:*:,,stickieshelp:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,evernote:///view/2489958/s23/0264a893-2dd9-4817-b7ba-58939f65aa24/0264a893-2dd9-4817-b7ba-58939f65aa24/
+	return
+}
+:*:,,asken::
+:*:,,asuken::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://www.asken.jp/
+	return
+}
+:*:,,pdf2cad::
+:*:,,p2cad::
+:*:,,print2cad::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\Print2CAD 2019.lnk
+	return
+}
+:*:,,time.:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://www.linktime.jp/service
+	return
+}
+:*:,,ahkseikihyougenn:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://sites.google.com/site/autohotkeyjp/reference/commands/RegExMatch
+	return
+}
+:*:,,mezzmo::
+:*:,,medhia::
+:*:,,mplayer::
+:*:,,avplayer::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\Mezzmo.lnk
+	return
+}
+:*:,,alarm:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://www.linktime.jp/service
+	return
+}
+:*?:,,a.::
+{
+
+	send,{ctrl down}
+	
+	send,a
+	clipboard =
+	send,c
+	clipwait,1
+	sleep,200
+	send,d
+
+	send,{ctrl up}
+
+	run,"https://www.linktime.jp/service" --new-windows
+
+WinWait, ホーム | Link Time - Google Chrome, 
+IfWinNotActive, ホーム | Link Time - Google Chrome, , WinActivate, ホーム | Link Time - Google Chrome, 
+WinWaitActive, ホーム | Link Time - Google Chrome, 	
+
+sleep,300
+
+winmove,a,, 228, 91 ,1123 ,797
+sleep,500
+
+MouseGetPos, x0, y0
+MouseMove, 1059,735
+MouseClick, left
+
+sleep,800
+
+mousemove, 509, 438
+mouseclick, left
+send,{vk1Dsc07B}
+sleep,300
+send,label
+sleep,100
+send,{tab}
+sleep,100
+send,{space}
+
+send,{up}
+sleep,100
+send,{enter}
+sleep,100
+send,{tab 7}
+sleep,100
+send,{right}
+sleep,100
+send,{tab}
+send,{up 3}
+;2回
+sleep,100
+send,{tab 4}
+sleep,100
+send,{space}
+;スヌーズ設定
+sleep,300
+send,{home}
+sleep,100
+
+;mouseclick
+
+MouseGetPos, x0, y0
+MouseMove, 289,243
+MouseClick, left
+
+a_linktime := a_now
+
+envadd,a_linktime,clipboard,M
+
+stringmid,a_linktime,a_linktime,9,4
+	
+stringleft,input_hour,a_linktime,2
+stringright,input_minutes,a_linktime,2
+
+;msgbox,%input_hour%  %input_minutes%
+
+;inputbox,a,a時間
+;inputbox,b,b分
+
+;input_hour = %a%
+;input_minutes = %b%
+;msgbox,b
+input_hour:=input_hour
+input_minutes:=input_minutes
+
+Clipboard := clipboard_backup
+
+;msgbox, %input_hour% `: %input_minutes% `r %clipboard% `r %a_linktime%
+
+Loop,Read,C:\Users\stroketip\Desktop\ショートカット\ahk\library\linktime-csv\linktime-hour.csv
+{
+	texta := A_LoopReadLine
+	
+	stringtrimright,texta,texta,8
+	if(texta = input_hour)
+	{
+		textb:= a_loopreadline
+		stringright,textb,textb,7
+		
+		stringleft,input_hour_x,textb,3
+		stringright,input_hour_y,textb,3
+		
+;msgbox,hourtime %input_hour_x% , %input_hour_y%
+;		msgbox,x=%input_hour_x% y=%input_hour_y%
+		break
+	}
+}
+
+
+Loop,Read,C:\Users\stroketip\Desktop\ショートカット\ahk\library\linktime-csv\linktime-minutes.csv
+{
+	texta := A_LoopReadLine
+	
+	stringtrimright,texta,texta,8
+
+	if(texta = input_minutes)
+	{
+		textb:= a_loopreadline
+		stringright,textb,textb,7
+		
+		stringleft,input_minutes_x,textb,3
+		stringright,input_minutes_y,textb,3
+		
+;		msgbox,x=%input_hour_x% y=%input_hour_y%
+		break
+	}
+}
+
+
+MouseMove, input_hour_x,input_hour_y
+MouseClick, left
+sleep,300
+
+;msgbox,minutestime %input_minutes_x% , %input_minutes_y%
+
+mousemove, input_minutes_x,input_minutes_y
+mouseclick, left
+sleep,300
+
+mousemove,227,166
+Input, UserInput, T3, {space},
+if ErrorLevel = Max
+{
+	mouseclick,left
+	return
+}
+;msgbox,リンクのテキストの中に、今日のデータがありませんでした。
+return
+}:*:,,quiz.:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\easyQuizzy.lnk
+	return
+}
+:*:,,rta3:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\kazamitimer124\kazamitimer124\kazamitimer.exe
+	return
+}
+:*:,,hpb.:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files (x86)\JustSystems\HPB19\CLASSIC\bin\hpbpage.exe
+	return
+}
+:*:,,hpbsp:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files (x86)\JustSystems\HPB19\SP\bin\hpbsp.exe
+	return
+}
+
+>^+l::
+:*:,,stack::
+:*:,,stock::
+{
+
+WinGet, active_id1, ID, A
+WinGetPos,x1,y1, WidthS, HeightS, ahk_id %active_id1%
+
+send,{appskey}
+sleep,200
+send,{down 7}{right}
+sleep,200
+send,{up}
+sleep,100
+send,{enter}
+sleep,500
+
+send,{n}
+sleep,300
+
+send,{vk1Dsc07B}
+send,z_newstack{enter}
+sleep,100
+
+;MsgBox, The active window's ID is "%active_id%".
+
+WinGet, active_id2, ID, A
+WinGetPos , X2, Y2, Width, Height, ahk_id %active_id2%
+
+
+CoordMode, Mouse, Screen
+;mousemove, x1+15,y1+9,
+;send,{shift down}
+;sleep,100
+MouseClickDrag, l, X2+15, Y2+15 , 2337, -266, 2,
+sleep,200
+send,{t}
+
+
+winget,outputvar,List,,,"nusfdt",
+
+loop,100
+{
+	
+	array := outputvar%a_index%
+
+	wingettitle,title_a,ahk_id %array%
+	
+	stringleft,hantei,title_a,8
+	
+	if(hantei="ASticky:")
+	{
+;			msgbox,%array%
+		;ドラッグ実行
+		WinGetPos , X2, Y2, Width, Height, ahk_id %array%
+		send,{shift down}
+		;sleep,100
+		MouseClickDrag, l, X2+15, Y2+15 , 2352, -251, 2
+		send,{shift up}
+	}
+
+}
+return
+}
+
+:*:,,stcapture::
+:*:,,stickiescapture::
+:*:,,sthozon::
+:*:,,stscan::
+{
+;フルキャプチャ;
+
+;----------------スティッキーズをfaststone capture で保存していく
+;**できれば、重ならないようにスティッキーズを並べておく**--;
+{
+	
+	winget,outputvar,List,,,"nusfdt",
+
+	nowheight:=0
+	maxwidth:=0
+	column:=0
+	line:=0
+
+loop,100
+{
+	
+	array := outputvar%a_index%
+
+	wingettitle,title_a,ahk_id %array%
+	
+	stringleft,hantei,title_a,8
+
+	
+	
+	if(hantei="ASticky:")
+	{
+;			msgbox,%array%
+		;ドラッグ実行
+		WinGetPos , X2, Y2, Width, Height, ahk_id %array%
+
+		line++
+
+		
+		winmove, ahk_id %array%,,2000+column, nowheight-71
+		nowheight+=height
+
+
+		if(maxwidth<width)
+		{
+			maxwidth := width
+		}
+
+		if(line=18)  or (nowheight > 1400)
+			{
+				line = 0
+				column+=maxwidth
+				nowheight:=0
+				maxwidth:=0
+			}
+
+	}
+	
+}
+
+}
+wingettitle,nowd,a
+run,C:\Users\stroketip\Desktop\ショートカット\FastStone Capture.lnk
+WinWait, FastStone Capture, 
+IfWinNotActive, FastStone Capture, , WinActivate, FastStone Capture, 
+WinWaitActive, FastStone Capture,
+
+winactivate,%nowd%
+
+winget,outputvar,List,,,"nusfdtzz",
+
+strap1 := 1
+
+loop,100
+{
+	
+	array := outputvar%a_index%
+
+	wingettitle,title_a,ahk_id %array%
+	
+	stringleft,hantei,title_a,8
+	
+	if(hantei="ASticky:")
+	{
+;			msgbox,%array%
+		;ドラッグ実行
+		WinGetPos , X2, Y2, Width, Height, ahk_id %array%
+		CoordMode, Mouse, Screen
+		mousemove, X2+15, Y2+15
+		
+		if(strap1 = 1)
+		{
+			sleep,800
+			mouseclick,left
+			sleep,100
+			mouseclick,left
+			sleep,100
+			mouseclick,left
+			sleep,100
+			mouseclick,left
+			sleep,100
+		}
+		
+		mouseclick,left
+		sleep,100
+		send,!{printscreen}	
+		sleep,700
+		if(strap1 = 1)
+		{
+			sleep,1000
+		}
+		
+		strap1 =
+
+	}
+	CoordMode, Mouse,Relative
+}
+
+;---------------------- evernoteを開いておく
+send,^+f
+sleep,1100
+send,^n
+
+WinWait, ahk_class ENSingleNoteView, 
+IfWinNotActive, ahk_class ENSingleNoteView, , WinActivate, ahk_class ENSingleNoteView, 
+WinWaitActive, ahk_class ENSingleNoteView, 
+
+sleep,300
+
+WinMove,ahk_class ENSingleNoteView,, 1912, -348 , 1096, 1896
+
+sleep,700
+send,{vk1Dsc07B}
+send, Stickies %A_year%-%a_mm%-%a_dd%{enter}
+	
+
+return
+}
+
+
+:*:,,sort.::
+{
+		send,^a
+	send,{del}
+	send,^d
+	sleep,50
+
+
+	winget,outputvar,List,,,"nusfdt",
+
+	nowheight:=0
+	maxwidth:=0
+	column:=0
+	line:=0
+
+loop,100
+{
+	
+	array := outputvar%a_index%
+
+	wingettitle,title_a,ahk_id %array%
+	
+	stringleft,hantei,title_a,8
+
+	
+	
+	if(hantei="ASticky:")
+	{
+;			msgbox,%array%
+		;ドラッグ実行
+		WinGetPos , X2, Y2, Width, Height, ahk_id %array%
+
+		line++
+
+		
+		winmove, ahk_id %array%,, 2932-Width-column, nowheight-71
+		nowheight+=height
+
+
+		if(maxwidth<width)
+		{
+			maxwidth := width
+		}
+
+		if(line=18)  or (nowheight > 1400)
+			{
+				line = 0
+				column+=maxwidth
+				nowheight:=0
+				maxwidth:=0
+			}
+
+	}
+	
+}
+return
+}
+
+/*
+{
+		send,^a
+	send,{del}
+	send,^d
+	sleep,50
+
+
+	winget,outputvar,List,,,"nusfdt",
+
+	nowheight:=0
+	maxwidth:=0
+	column:=0
+	line:=0
+
+loop,100
+{
+	
+	array := outputvar%a_index%
+
+	wingettitle,title_a,ahk_id %array%
+	
+	stringleft,hantei,title_a,8
+
+	
+	
+	if(hantei="ASticky:")
+	{
+;			msgbox,%array%
+		;ドラッグ実行
+		WinGetPos , X2, Y2, Width, Height, ahk_id %array%
+
+		line++
+
+		
+		winmove, ahk_id %array%,,2000+column, nowheight-71
+		nowheight+=height
+
+
+		if(maxwidth<width)
+		{
+			maxwidth := width
+		}
+
+		if(line=18)  or (nowheight > 1400)
+			{
+				line = 0
+				column+=maxwidth
+				nowheight:=0
+				maxwidth:=0
+			}
+
+	}
+	
+}
+return
+}
+*/
+
+:*:,,stclear::
+:*:,,stdelete::
+:*:,,clearst::
+:*:,,deletest::
+:*:,,stelse::
+:*:,,sterase::
+{
+	winget,outputvar,List,,,"nusfdtzz",
+
+	strap1 := 1
+loop,100
+{
+	
+	array := outputvar%a_index%
+
+	wingettitle,title_a,ahk_id %array%
+	
+	stringleft,hantei,title_a,8
+
+	if(hantei="ASticky:")
+	{
+;			msgbox,%array%
+		;ドラッグ実行
+
+		
+		WinGetPos , X2, Y2, Width, Height, ahk_id %array%
+		CoordMode, Mouse, Screen
+		mousemove, X2+15, Y2+15
+
+		if(strap1 = 1)
+		{
+			sleep,100
+			mouseclick,left
+			sleep,100
+			mouseclick,left
+			sleep,100
+			mouseclick,left
+			sleep,100
+			mouseclick,left
+			sleep,100
+		}
+		mouseclick,left
+		sleep,100
+		send,^d
+		strap1 =
+		sleep,400
+
+	}
+	CoordMode, Mouse,Relative
+}
+return
+}
+:*:,,changekey::
+:*:,,chkkey::
+:*:,,chgkey::
+{
+	RunAs, stroketip@outlook.com, nanamomo1
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+
+	run,C:\Users\stroketip\Desktop\ショートカット\chgkey14\ChgKey.exe
+
+	RunAs
+	return
+}
+
+f23 & 0::
+
+{
+	
+run,evernote:///view/2489958/s23/31b7ade4-3e90-4b85-afd1-a1f6d329d722/31b7ade4-3e90-4b85-afd1-a1f6d329d722/
+	return
+}
+
+f23 & 9::
+{
+	
+	run,evernote:///view/2489958/s23/ebef98f6-6b8d-47a0-a302-92e88c69b8fd/ebef98f6-6b8d-47a0-a302-92e88c69b8fd/
+	return
+}
+
+f23 & 7::
+{
+	run,evernote:///view/2489958/s23/90c3f6b6-4d77-4176-b246-4e99c5d36c7e/90c3f6b6-4d77-4176-b246-4e99c5d36c7e/
+	return
+	}
+
+f23 & 1::
+{
+
+;今月のノートを開く
+
+a_mm1 = 0%a_mm%
+stringright,a_mm1,a_mm1,2
+a_mm1 = %A_YYYY%%a_mm1%
+
+Loop,Read,C:\Users\stroketip\Desktop\ショートカット\ahk\evernotecal_link\callink.csv
+{
+	texta := A_LoopReadLine
+	
+	stringleft,texta,texta,6
+
+	if(texta = a_mm1)
+	{
+		textb:= a_loopreadline
+		stringtrimleft,textb,textb,7
+		
+		run,%textb%
+		return
+	}
+
+	
+}
+
+msgbox,カレンダーリンクのテキストの中に、今月のリンクがありませんでした。
+return
+}
+
+
+f23 & 2::
+{
+
+;-1月
+a_mm1 = %a_mm% -1
+a_mm1--
+a_mm1 = 0%a_mm1%
+stringright,a_mm1,a_mm1,2
+
+if(a_mm1 = 00)
+{
+	yearmonth := a_yyyy-1
+	a_mm1 = %yearmonth%12
+}
+else
+{
+a_mm1 = %A_YYYY%%a_mm1%
+}
+
+Loop,Read,C:\Users\stroketip\Desktop\ショートカット\ahk\evernotecal_link\callink.csv
+{
+	texta := A_LoopReadLine
+	
+	stringleft,texta,texta,6
+
+	if(texta = a_mm1)
+	{
+	
+		textb:= a_loopreadline
+		stringtrimleft,textb,textb,7
+		
+		
+		run,%textb%
+		return
+	}
+}
+
+msgbox,カレンダーリンクのテキストの中に、先月のリンクがありませんでした。
+return
+}
+
+f23 & 3::
+{
+
+;+1月
+a_mm1 = %a_mm% +1
+a_mm1++
+a_mm1 = 0%a_mm1%
+stringright,a_mm1,a_mm1,2
+
+if(a_mm1=13)
+{
+	a_mm1-=12
+	ayear:= a_yyyy
+	ayear++
+	a_mm1 = %ayear%01
+}
+else
+{
+a_mm1 = %A_YYYY%%a_mm1%
+}
+
+;msgbox,%a_mm1%
+
+Clipboard := clipboard_backup
+
+Loop,Read,C:\Users\stroketip\Desktop\ショートカット\ahk\evernotecal_link\callink.csv
+{
+	texta := A_LoopReadLine
+	
+	stringleft,texta,texta,6
+
+	if(texta = a_mm1)
+	{
+		textb:= a_loopreadline
+		stringtrimleft,textb,textb,7
+		msgbox,%textb%
+		run,%textb%
+		return
+	}
+
+	
+}
+
+msgbox,カレンダーリンクのテキストの中に、来月のリンクがありませんでした。
+
+return	
+}
+
+:*:,,brain.:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\TheBrain 9.lnk
+	return
+}
+:*:,,uploda::
+:*:,,xshare:: 
+:*:,,uproda::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files\ShareX\ShareX.exe
+	return
+}:*:,,jhelp.::
+:*:,,javascripthelp::
+:*:,,javascript.:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,http://www.tohoho-web.com/js/
+	return
+}
+:*:,,kif.:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://www.shogi-extend.com/w?query=hinex
+	return
+}
+:*:,,byouinnlist::
+:*:,,checklist.::
+:*:,,byouinntyekku::
+:*:,,byouintyekku::
+:*:,,checkbyouinn::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,evernote:///view/2489958/s23/43ba84c6-0557-4884-a4a9-280e29758605/43ba84c6-0557-4884-a4a9-280e29758605/
+	return
+}
+:*:,,foldersize::
+:*:,,diskinfo::
+:*:,,disksize::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Folder Size\Folder Size.lnk
+	return
+}
+:*:,,seikihyougenn::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,evernote:///view/2489958/s23/f97b80f3-359b-47b9-b19b-4e814d2a2b20/f97b80f3-359b-47b9-b19b-4e814d2a2b20/
+	return
+}
+:*:,,googlepict::
+:*:,,googlephoto::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://photos.google.com/
+	return
+}
+:*:,,hanafuda:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,evernote:///view/2489958/s23/2266a420-5a5d-4447-ac1c-6b8ab2038083/2266a420-5a5d-4447-ac1c-6b8ab2038083/
+	return
+}
+
+<^+z::
+{
+MouseGetPos, x0, y0
+
+send,^m
+
+WinWait, ノートの管理, 
+IfWinNotActive, ノートの管理, , WinActivate, ノートの管理, 
+WinWaitActive, ノートの管理, 
+
+sleep,100
+mouseclick,l,41,409,,1
+mouseclick,l,423,103,,l
+mouseclick,l,326,215,1
+mouseclick,l,352,184,1
+mouseclick,r
+sleep,100
+send,{down}
+sleep,100
+send,{enter}
+
+WinClose,a
+Mousemove, x0, y0,1
+
+
+return
+}
+:*:,,dashbord:: 
+:*:,,dashbo-do::
+:*:,,dashboard.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\ahk\run bat\edge_bord.exe
+	return
+}
+:*:,,ba-kun.::
+:*:,,makebarcode::
+:*:,,vcode::
+:*:,,qrcode::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files (x86)\Barcode Generator\BarcodeGenerator.exe
+	return
+}
+:*:,,mysql::
+:*:,,sql.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\MySQL\MySQL Server 8.0\MySQL 8.0 Command Line Client.lnk
 	return
 }
