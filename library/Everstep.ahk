@@ -1,12 +1,12 @@
 SetTitleMatchMode, 2
 
-winwait,- Evernote
+winwait,- ]—ˆ‚Ì Evernote
 sleep,100
 send,^+f
 
-winactivate,- Evernote
-IfWinNotActive,- Evernote, , WinActivate,- Evernote
-WinWaitActive,- Evernote, 
+winactivate,- ]—ˆ‚Ì Evernote
+IfWinNotActive,- ]—ˆ‚Ì Evernote, , WinActivate,- ]—ˆ‚Ì Evernote
+WinWaitActive,- ]—ˆ‚Ì Evernote, 
 
 sleep,100
 

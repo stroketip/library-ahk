@@ -5195,9 +5195,9 @@ WinWaitActive, Eris,
 run,evernote:///view/2489958/s23/70e6e58d-56c8-4b15-82b5-fc775679fecd/70e6e58d-56c8-4b15-82b5-fc775679fecd/
 sleep,100
 
-WinWait, すべてのノートブック - stroketip@yahoo.co.jp - Evernote, 
-IfWinNotActive, すべてのノートブック - stroketip@yahoo.co.jp - Evernote, , WinActivate, すべてのノートブック - stroketip@yahoo.co.jp - Evernote, 
-WinWaitActive, すべてのノートブック - stroketip@yahoo.co.jp - Evernote, 
+WinWait, すべてのノートブック - stroketip@yahoo.co.jp - 従来の Evernote, 
+IfWinNotActive, すべてのノートブック - stroketip@yahoo.co.jp - 従来の Evernote, , WinActivate, すべてのノートブック - stroketip@yahoo.co.jp - 従来の Evernote, 
+WinWaitActive, すべてのノートブック - stroketip@yahoo.co.jp - 従来の Evernote, 
 MouseClick, left,  568,  8
 Sleep, 100
 MouseClick, left,  356,  750
@@ -7211,7 +7211,7 @@ loop,100
 	CoordMode, Mouse,Relative
 }
 
-;---------------------- evernoteを開いておく
+;---------------------- 従来の Evernoteを開いておく
 send,^+f
 sleep,1100
 send,^n

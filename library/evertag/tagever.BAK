@@ -16,7 +16,7 @@ vk1Dsc07B & space::
 	mainmenuflag = 1
 	return
 
-#ifwinactive - ]—ˆ‚Ì Evernote
+#ifwinactive - Evernote
 
 ~vk1Dsc07B & space::
 {
@@ -31,7 +31,7 @@ vk1Dsc07B & space::
 		spaceflag = 0
 		hiddenmode = 1
 
-		winactivate,- ]—ˆ‚Ì Evernote
+		winactivate,- Evernote
 		exitapp
 		return
 	}
@@ -55,14 +55,14 @@ space::
 			spaceflag = 0
 			
 			
-			winactivate,- ]—ˆ‚Ì Evernote
+			winactivate,- Evernote
 			return 
 		} 
 		else
 		{
 			spacemenu(spaceflag)
 			spaceflag=1
-			winactivate,- ]—ˆ‚Ì Evernote
+			winactivate,- Evernote
 			Return
 		}
   
@@ -331,7 +331,7 @@ return
 	
 		sleep,100
 		mainmenu()
-		winactivate,- ]—ˆ‚Ì Evernote
+		winactivate,- Evernote
 	
 	return
 
@@ -415,7 +415,7 @@ loop,read,C:\Users\stroketip\Desktop\ƒVƒ‡[ƒgƒJƒbƒg\ahk\library\evertag\setword.
 	Gui,20: Add, Text, x392 y290 w50 h20 , %Text0%
 
 	Gui,20:show
-	winactivate,- ]—ˆ‚Ì Evernote
+	winactivate,- Evernote
 	return
 } 
 
@@ -428,7 +428,7 @@ spacemenu(spaceflag)
 	Gui 19: Add, Text, x22 y90 w230 h50 , TabƒL[‚Å“ü‚ê‘Ö‚¦‚ª‚Å‚«‚Ü‚·
 	Gui 19: Show, x373 y208 h168 w280, selection charactor
 
-	winactivate,- ]—ˆ‚Ì Evernote
+	winactivate,- Evernote
 	return
 }
 
@@ -506,7 +506,7 @@ WinWaitActive, ƒ^ƒO‚ÌŠ„‚è“–‚Ä,
 	sleep,150
 	
 	mouseclick,left,162,317,,0
-	winactivate,- ]—ˆ‚Ì Evernote
+	winactivate,- Evernote
 	mousemove,x0, y0
 	
 	exitapp
