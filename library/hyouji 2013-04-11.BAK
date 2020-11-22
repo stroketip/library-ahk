@@ -7418,7 +7418,7 @@ return
 	return
 }
 
-f23 & 0::
+Media_Play_Pause:: & 0::
 
 {
 	
@@ -7426,20 +7426,20 @@ run,evernote:///view/2489958/s23/31b7ade4-3e90-4b85-afd1-a1f6d329d722/31b7ade4-3
 	return
 }
 
-f23 & 9::
+Media_Play_Pause:: & 9::
 {
 	
 	run,evernote:///view/2489958/s23/ebef98f6-6b8d-47a0-a302-92e88c69b8fd/ebef98f6-6b8d-47a0-a302-92e88c69b8fd/
 	return
 }
 
-f23 & 7::
+Media_Play_Pause:: & 7::
 {
 	run,evernote:///view/2489958/s23/90c3f6b6-4d77-4176-b246-4e99c5d36c7e/90c3f6b6-4d77-4176-b246-4e99c5d36c7e/
 	return
 	}
 
-f23 & 1::
+Media_Play_Pause:: & 1::
 {
 
 ;今月のノートを開く
@@ -7471,7 +7471,7 @@ return
 }
 
 
-f23 & 2::
+Media_Play_Pause:: & 2::
 {
 
 ;-1月
@@ -7512,7 +7512,7 @@ msgbox,カレンダーリンクのテキストの中に、先月のリンクがありませんでした。
 return
 }
 
-f23 & 3::
+Media_Play_Pause:: & 3::
 {
 
 ;+1月
@@ -7700,5 +7700,15 @@ return
 	send,^d
 	sleep,50
 	run,C:\Program Files (x86)\Barcode Generator\BarcodeGenerator.exe
+	return
+}
+:*:,,mysql::
+:*:,,sql.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\MySQL\MySQL Server 8.0\MySQL 8.0 Command Line Client.lnk
 	return
 }
