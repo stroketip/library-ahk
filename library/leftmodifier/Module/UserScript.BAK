@@ -88,7 +88,7 @@ SoundPlay,*64
 return
 
 Rctrl & down::
-send,{Blind}{Browser_Home}
+send,{Blind}{MEDIA_STOP}
 SoundPlay,*64
 return
 

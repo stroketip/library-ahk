@@ -5195,9 +5195,9 @@ WinWaitActive, Eris,
 run,evernote:///view/2489958/s23/70e6e58d-56c8-4b15-82b5-fc775679fecd/70e6e58d-56c8-4b15-82b5-fc775679fecd/
 sleep,100
 
-WinWait, すべてのノートブック - stroketip@yahoo.co.jp - Evernote, 
-IfWinNotActive, すべてのノートブック - stroketip@yahoo.co.jp - Evernote, , WinActivate, すべてのノートブック - stroketip@yahoo.co.jp - Evernote, 
-WinWaitActive, すべてのノートブック - stroketip@yahoo.co.jp - Evernote, 
+WinWait, すべてのノートブック - stroketip@yahoo.co.jp - 従来の Evernote, 
+IfWinNotActive, すべてのノートブック - stroketip@yahoo.co.jp - 従来の Evernote, , WinActivate, すべてのノートブック - stroketip@yahoo.co.jp - 従来の Evernote, 
+WinWaitActive, すべてのノートブック - stroketip@yahoo.co.jp - 従来の Evernote, 
 MouseClick, left,  568,  8
 Sleep, 100
 MouseClick, left,  356,  750
@@ -6050,7 +6050,7 @@ clipwait,1
 	send,{vk1Dsc07B}
 ;	send,d
 send,{ctrl up}	
-	
+	send,^d
 	sleep,100
 ;	msgbox,%clipboard%
 
@@ -6068,13 +6068,66 @@ if(foundpos>=1)
 IfWinNotActive, Google カレンダー -, , WinActivate, Google カレンダー -, 
 WinWaitActive, Google カレンダー -, 
 
+;グーグルに登録
 
+	sleep,1900
+
+	; +作成ボタン位置
+	MouseMove, 73,136
+	MouseClick, left
+	MouseMove, x0, y0
+	
+	sleep,500
+;	send,q
+;	sleep,300
+;	msgbox,%a2%
+	send,%clipboard%
+	title := clipboard
+	sleep,100
+	send,{tab}
+	send,+{tab}
+;	send,%a2%
+;a2はタイトル
+
+	
+	sleep,300
+	send,{tab 2}
+	sleep,100
+	send,{enter}
+	sleep,300
+	clipboard = %a1%-%a2%-%a3%
+	clipwait,1
+	sleep,500
+;a1は日付
+;	send,%clipboard%
+	send,^v
+	sleep,100
+	send,{enter}
+	sleep,100
+	send,{enter}
+	
+		sleep,600
+	sleep,600
+	send,/
+	
+	clipboard := title
+	sleep,200
+	send,^v
+	sleep,600
+	send,{down}
+	title =
+	
+	Clipboard := clipboard_backup
+		return
+/*
 ;グーグルに登録
 
 	sleep,1900
 	
 	MouseGetPos, x0, y0
-	MouseMove, 194,117
+	; +作成ボタン位置
+	MouseMove, 73,136
+
 	MouseClick, left
 MouseMove, x0, y0
 
@@ -6105,8 +6158,9 @@ MouseMove, x0, y0
 	send,{enter}
 	
 	Clipboard := clipboard_backup
-	
-	return
+		return
+*/
+
 ;	マッチしませんでした
 
 }
@@ -6129,35 +6183,51 @@ WinWaitActive, Google カレンダー -,
 
 	sleep,1900
 	MouseGetPos, x0, y0
-	MouseMove, 194,117
+	; +作成ボタン位置
+	MouseMove, 73,136
 	MouseClick, left
 	MouseMove, x0, y0
 	
 	sleep,500
-	send,q
+;	send,q
 ;	sleep,300
 ;	msgbox,%a2%
-	
-	sleep,400
+	send,%clipboard%
+	title := clipboard
+	sleep,100
 	send,{tab}
 	send,+{tab}
 ;	send,%a2%
 ;a2はタイトル
-	send,^v
+
 	
-	sleep,300
+	sleep,700
 	send,{tab 2}
-	
+	sleep,100
+	send,{enter}
+	sleep,300
 	clipboard = %a1%/%a2%
 	clipwait,1
-	sleep,300
+	sleep,400
 ;a1は日付
+;	send,%clipboard%
 	send,^v
+	sleep,100
+	send,{enter}
+	sleep,100
+	send,{enter}
+	sleep,100
+	sleep,600
+	sleep,600
+	send,/
 	
+	clipboard := title
+	sleep,200
+	send,^v
 	sleep,100
-	send,{enter}
-	sleep,100
-	send,{enter}
+	sleep,600
+	send,{down}
+	title =
 	
 	Clipboard := clipboard_backup
 	
@@ -6214,6 +6284,8 @@ WinWaitActive, Google カレンダー -,
 	send,{enter}
 	sleep,100
 	send,{enter}
+	sleep,200
+	
 	
 	Clipboard := clipboard_backup
 	
@@ -7211,7 +7283,7 @@ loop,100
 	CoordMode, Mouse,Relative
 }
 
-;---------------------- evernoteを開いておく
+;---------------------- 従来の Evernoteを開いておく
 send,^+f
 sleep,1100
 send,^n
@@ -7710,5 +7782,153 @@ return
 	send,^d
 	sleep,50
 	run,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\MySQL\MySQL Server 8.0\MySQL 8.0 Command Line Client.lnk
+	return
+}
+:*:,,jw.:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\jww\Jw_win.exe
+	return
+}
+:*:,,keyremap::
+:*:,,keytweak::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files (x86)\KeyTweak\KeyTweak.exe
+	return
+}
+:*:,,shuujino-to:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,evernote:///view/2489958/s23/d001ac8d-6da0-42bb-bd17-070bc609db51/d001ac8d-6da0-42bb-bd17-070bc609db51/
+	return
+}
+:*:,,byouinn.:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://keep.google.com/u/0/#LIST/1ju_XJnJujkPig19boUE5MwbSyUAvqAn_377puAZYAPhALFGLB9ou2R_4r0WhL14
+	return
+}
+:*:,,raberu.::
+:*:,,labelprint.::
+:*:,,rabelprint::
+:*:,,raberuprint::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\ahk\uwsc\60.UWS
+	return
+}
+:*:,,laberuw::
+:*:,,raberuw.::
+:*:,,labelw::
+:*:,,wlabel::
+:*:,,wordlabel::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Program Files\Microsoft Office\root\Office16\WINWORD.EXE
+	WinWait, Word, 
+IfWinNotActive, Word, , WinActivate, Word, 
+WinWaitActive, Word, 
+sleep,1000
+send,{enter}
+sleep,500
+send,^p:
+sleep,1000
+send,{tab 2}
+sleep,100
+send,{space}
+
+send,{up}
+sleep,100
+send,{space}
+sleep,500
+
+send,{tab 3}
+sleep,100
+send,{tab 3}
+sleep,300
+send,{tab 1}
+sleep,300
+send,{space}
+
+sleep,300
+send,{up}
+sleep,200
+send,{enter}
+sleep,100
+send,{tab}
+sleep,100
+send,{space}
+sleep,100
+send,a
+
+sleep,300
+
+send,{tab 5}
+send,{vk1Dsc07B}
+loop,4
+{
+send,3
+send,{tab}
+sleep,100
+}
+send,{enter}
+sleep,300
+send,{esc}
+
+	return
+}
+:*:,,yomiagedouga:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\nicotalk3y\nicotalk3z\yomiagedouga.ahk
+	return
+}
+:*:,,paper.::
+:*:,,digitalpaper::
+:*:,,sonypaper::
+:*:,,degitalpaper::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\Digital Paper App.lnk
+	return
+}
+:*:,,croick::
+:*:,,sonyf.::
+:*:,,degitalfolder::
+:*:,,paperfolder::
+:*:,,sonyfolder::
+:*:,,paperf.::
+:*:,,sonycal.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Dropbox\sony degital paper\Croick
 	return
 }
