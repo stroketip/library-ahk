@@ -1,0 +1,56 @@
+ ドライブ C のボリューム ラベルがありません。
+ ボリューム シリアル番号は B90C-C653 です
+
+ C:\testahkgit\library-ahk のディレクトリ
+
+2021/03/07  16:48    <DIR>          .
+2021/03/07  16:48    <DIR>          ..
+2021/03/07  16:47               410 .gitattributes
+2021/03/07  16:47               617 .gitignore
+2021/03/07  16:47         1,175,552 a.exe
+2021/03/07  16:47               184 bkd.ahk
+2021/03/07  16:48                 0 dir.txt
+2021/03/07  16:47    <DIR>          dot
+2021/03/07  16:47    <DIR>          evernotecal_link
+2021/03/07  16:47             3,404 getdouble.ahk
+2021/03/07  16:47                59 googlechrome activate.ahk
+2021/03/07  16:47                96 lastfoundwindow.ahk
+2021/03/07  16:47    <DIR>          library
+2021/03/07  16:47    <DIR>          library-ahk
+2021/03/07  16:47             7,109 md(ahk録画）.ahk
+2021/03/07  16:47             9,421 monthlyreview.ahk
+2021/03/07  16:47               194 MouseClick, right,  724,  526.txt
+2021/03/07  16:47             1,068 neumantweet.txt
+2021/03/07  16:47               355 niconico findwindow.ahk
+2021/03/07  16:47    <DIR>          php-5.6.0-nts-Win32-VC11-x86
+2021/03/07  16:47               133 q 持って行くもの.ahk
+2021/03/07  16:47    <DIR>          run bat
+2021/03/07  16:47           535,086 schedule watcher input new 2015-02-10.ahk
+2021/03/07  16:47           534,680 schedule watcher input new 2015-02-10.BAK
+2021/03/07  16:47           534,706 schedule watcher input new.ahk
+2021/03/07  16:47           534,690 schedule watcher input new.BAK
+2021/03/07  16:47           639,256 schedule watcher input.ahk
+2021/03/07  16:47           638,750 schedule watcher input.BAK
+2021/03/07  16:47               114 send_enter.ahk
+2021/03/07  16:47            12,108 stroketiptweet.txt
+2021/03/07  16:47             3,218 tanaorosi.ahk
+2021/03/07  16:47         1,078,839 tasklog.txt
+2021/03/07  16:47                24 tasktw.txt
+2021/03/07  16:47             3,784 temp.jpg
+2021/03/07  16:47             3,708 temp10.jpg
+2021/03/07  16:47             7,788 temp2.jpg
+2021/03/07  16:47             3,784 temp3.jpg
+2021/03/07  16:47             3,892 temp4.jpg
+2021/03/07  16:47             3,892 temp5.jpg
+2021/03/07  16:47             3,892 temp6.jpg
+2021/03/07  16:47             4,382 temp7.jpg
+2021/03/07  16:47             3,838 temp8.jpg
+2021/03/07  16:47             3,784 temp9.jpg
+2021/03/07  16:47             3,668 tmpclip.txt
+2021/03/07  16:47                25 twitter.txt
+2021/03/07  16:47    <DIR>          uwsc
+2021/03/07  16:47             2,758 将棋の駒入力.ahk
+2021/03/07  16:47                 4 環境依存文字2013-02-07.txt
+2021/03/07  16:47                 0 終了時のウィンドウ.txt
+              40 個のファイル           5,759,272 バイト
+               9 個のディレクトリ  437,540,888,576 バイトの空き領域
