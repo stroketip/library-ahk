@@ -233,7 +233,7 @@ space::
 :*:ac::
 {
 	send,^{home}
-	sleep,100
+	
 	send,{right 6}
 	send,+{end}
 	send,+{left}

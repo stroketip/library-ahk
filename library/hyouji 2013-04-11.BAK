@@ -6032,6 +6032,7 @@ return
 }
 
 :*:,,g.::
+:*:,,g.::
 {
 	settitlematchmode,2
 	
@@ -6188,11 +6189,12 @@ WinWaitActive, Google カレンダー -,
 	MouseClick, left
 	MouseMove, x0, y0
 	
-	sleep,500
+	sleep,1300
 ;	send,q
 ;	sleep,300
 ;	msgbox,%a2%
-	send,%clipboard%
+	send,^v
+	;%clipboard%
 	title := clipboard
 	sleep,100
 	send,{tab}
@@ -7930,5 +7932,6 @@ send,{esc}
 	send,^d
 	sleep,50
 	run,C:\Users\stroketip\Dropbox\sony degital paper\Croick
+	run,C:\Users\stroketip\Desktop\ショートカット\Digital Paper App.lnk
 	return
 }

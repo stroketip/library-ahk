@@ -6032,6 +6032,7 @@ return
 }
 
 :*:,,g.::
+:*:,,g.::
 {
 	settitlematchmode,2
 	
@@ -6188,11 +6189,12 @@ WinWaitActive, Google ƒJƒŒƒ“ƒ_[ -,
 	MouseClick, left
 	MouseMove, x0, y0
 	
-	sleep,500
+	sleep,1300
 ;	send,q
 ;	sleep,300
 ;	msgbox,%a2%
-	send,%clipboard%
+	send,^v
+	;%clipboard%
 	title := clipboard
 	sleep,100
 	send,{tab}
@@ -7909,6 +7911,7 @@ send,{esc}
 :*:,,digitalpaper::
 :*:,,sonypaper::
 :*:,,degitalpaper::
+:*:,,sonyp.::
 {
 	send,^a
 	send,{del}
