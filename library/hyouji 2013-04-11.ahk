@@ -28,6 +28,7 @@
 	run,C:\Program Files\IrfanView\i_view32.exe C:\Users\stroketip\Documents\my project\FileselectFile.png /clipcopy /hide=7
 	return
 }
+/*
 :*:,,gazou::
 {
 	send,^a
@@ -38,6 +39,7 @@
 	run,C:\Program Files\IrfanView\i_view32.exe C:\Users\stroketip\Documents\my project\gazou.png /clipcopy /hide=7
 	return
 }
+*/
 :*:,,grid::
 {
 	send,^a
@@ -7934,5 +7936,152 @@ send,{esc}
 	sleep,50
 	run,C:\Users\stroketip\Dropbox\sony degital paper\Croick
 	run,C:\Users\stroketip\Desktop\ショートカット\Digital Paper App.lnk
+	return
+}
+:*:,,mdhelp:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://qiita.com/tbpgr/items/989c6badefff69377da7
+	return
+}
+:*:,,myfiletag::
+:*:,,myscheme::
+:*:,,myurl.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\ahk\library\myscheme
+	return
+}
+:*:,,atto.:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\atto\atto.exe
+	return
+}
+:*:,,title.::
+:*:,,maketitle::
+:*:,,titlemake::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\NewBlue Titler Pro 7 Standalone.lnk
+	return
+}
+:*:,,avplayerup::
+:*:,,upfileav::
+:*:,,fileupav::
+:*:,,iphoneupav::
+:*:,,iphoneavup::
+:*:,,iphoneokuru::
+:*:,,avupfile::
+:*:,,avgup.::
+:*:,,iphoneup.::
+:*:,,avuploadfile::
+:*:,,upav.::
+:*:,,avfileup.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,http://stroketip-no-iPhone.local:8080
+	return
+}
+:*:,,timecalender::
+:*:,,timesheet::
+:*:,,cookcal::
+:*:,,cooktime::
+:*:,,cookbook::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\CookBook + Calendar.lnk
+	return
+}
+:*:,,ribure.::
+:*:,,ribureview::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,https://www1.libreview.com/meter
+	return
+}
+:*:,,freestyleribure::
+:*:,,riburetannmatu::
+:*:,,riburescanner::
+:*:,,riburescaner::
+:*:,,tannmaturibure::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\FreeStyle リブレ.lnk
+	return
+}
+:*:,,calesco::
+:*:,,calesco::
+:*:,,karesuko::
+:*:,,timetable.::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Calendarscope\Calendarscope.lnk
+	return
+}
+:*:,,paneruketugou::
+:*:,,paneru.::
+:*:,,ketugou.::
+:*:,,gazouketugou::
+
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\jointogether43\jointogether.exe
+	return
+}
+:*:,,pitarisikaku::
+:*:,,sikaku.::
+:*:,,gazouhosei::
+:*:,,sikakugazou::
+:*:,,gazousikaku::
+:*:,,sikakuhosei::
+:*:,,gazouketugou::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\ピタリ四角6.lnk
+	return
+}
+:*:,,sumatora::
+:*:,,smatora::
+:*:,,smatra::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\SumatraPDF-3.2-64\SumatraPDF-3.2-64.exe
 	return
 }

@@ -686,4 +686,18 @@
 	
 	
 	return
-}
+}:*:,,masamune::
+{
+
+	clipboard_backup = %ClipboardAll%
+	
+	FileRead, temp, C:\Users\stroketip\Desktop\ショートカット\ahk\library\textshot\masamune.txt
+
+	clipboard := temp
+	
+	clipwait,1
+	
+	send,^v
+	return
+}
+
