@@ -70,4 +70,10 @@ taikomoti:
 	clickimage(a)
 	a=
 	return
+}:*:,,honnwonyuushu:: 
+{
+	a=C:\Users\stroketip\Desktop\ショートカット\ahk\library\clickimage\clickimage00036.png
+	clickimage(a)
+	a=
+	return
 }

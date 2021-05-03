@@ -826,7 +826,9 @@ vk1Dsc07B & .::
 	run,C:\Users\stroketip\Desktop\ショートカット\ahk\library\taskset\
 	return
 }
+/*
 :*:,,shuujirebyu-::
+:*:,,shuujibyu-::
 {
 	send,^a
 	send,{del}
@@ -836,6 +838,7 @@ vk1Dsc07B & .::
 	run,C:\Users\stroketip\Documents\my project\週次レビュー 2013-06-12.docx
 	return
 }
+*/
 :*:,,gui::
 {
 	send,^a
@@ -2814,7 +2817,7 @@ return
 	send,{del}
 	send,^d
 	sleep,100
-	run,C:\Program Files\Windows Journal\Journal.exe
+	run,C:\Users\stroketip\Desktop\ショートカット\Daily Journal.lnk
 	return
 }
 :*:,,moji:: 
@@ -7808,6 +7811,8 @@ return
 	return
 }
 :*:,,shuujino-to:: 
+:*:,,shuujirebyu-::
+:*:,,shuujibyu-::
 {
 	send,^a
 	send,{del}
@@ -7944,7 +7949,11 @@ send,{esc}
 	send,{del}
 	send,^d
 	sleep,50
+	/*
 	run,https://qiita.com/tbpgr/items/989c6badefff69377da7
+	*/
+	
+	run,https://qiita.com/Qiita/items/c686397e4a0f4f11683d
 	return
 }
 :*:,,myfiletag::
@@ -7990,6 +7999,10 @@ send,{esc}
 :*:,,avuploadfile::
 :*:,,upav.::
 :*:,,avfileup.::
+:*:,,avupload.::
+:*:,,avup.::
+
+
 {
 	send,^a
 	send,{del}
@@ -8000,6 +8013,7 @@ send,{esc}
 }
 :*:,,timecalender::
 :*:,,timesheet::
+:*:,,timecal::
 :*:,,cookcal::
 :*:,,cooktime::
 :*:,,cookbook::
@@ -8013,6 +8027,9 @@ send,{esc}
 }
 :*:,,ribure.::
 :*:,,ribureview::
+:*:,,libre::
+:*:,,kettouti::
+
 {
 	send,^a
 	send,{del}
@@ -8038,6 +8055,8 @@ send,{esc}
 :*:,,calesco::
 :*:,,karesuko::
 :*:,,timetable.::
+:*:,,karennda-.::
+:*:,,calender.::
 {
 	send,^a
 	send,{del}
@@ -8083,5 +8102,81 @@ send,{esc}
 	send,^d
 	sleep,50
 	run,C:\Users\stroketip\Desktop\ショートカット\SumatraPDF-3.2-64\SumatraPDF-3.2-64.exe
+	return
+}
+:*:,,liveahk::
+:*:,,ahklive::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	send,http://live-stroketip:1880/hello-param/ahk:namef
+	return
+}
+:*:,,razupai::
+:*:,,raspi.::
+:*:,,rasberrypi::
+:*:,,rasverypi::
+:*:,,raspai::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,http://raspberrypi.local:1880/
+	return
+}
+:*:,,flipbook:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\Next FlipBook Maker Pro.lnk
+	return
+}
+:*:,,vinix::
+:*:,,binikkusu::
+:*:,,sigoto.::
+:*:,,sigotof::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,D:\ビニックス\-
+	return
+}
+:*:,,audioserver::
+:*:,,o-dhiosa-ba-::
+:*:,,iyahonn::
+:*:,,heddohonn::
+:*:,,bluetooth::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\AudioServer.lnk
+	return
+}
+:*:,,testlive::
+:*:,,testshougi::
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,http://live-stroketip:1880/shougi/
+	return
+}
+:*:,,pim.:: 
+{
+	send,^a
+	send,{del}
+	send,^d
+	sleep,50
+	run,C:\Users\stroketip\Desktop\ショートカット\EssentialPIM Pro.lnk
 	return
 }
